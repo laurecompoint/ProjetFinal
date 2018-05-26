@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Skia', sans-serif;
+    background-color: #FBF9F9;
+}
+#logo{
+    width: 200px;
+    height: 60px;
+}
+.NavColor{
+    background-color: #55A3AF;
+    color: white;
+}
+.NavColor a{
+    color: white;
+}
+.borderbutton a{
+    color: black;
+}
+.borderbutton a:hover{
+    text-decoration: none;
+}
+.fonction{
+    background-color: #2C7193;
+}
+.borderbuttonTwo{
+    border: ridge 5px black;
+    width: 600px;
+    margin-top: 40px;
+    background-color: white;
+}
+.footer{
+    background-color: #55A3AF;
+    padding-bottom: 10px;
+    padding-top: 3px;
+}
+.picture{
+    height: 150px;
+}
+.fonctionOne{
+    height: 400px;
+}
+.fonctionTwo{
+    border-right: ridge 5px black;
+}
+.pictureTwo{
+    border: ridge 3px black;
+    height: 400px;
+}
+.pictureThree{
+    border: ridge 3px black;
+    height: 400px;
+}
+.button{
+    background-color: #55A3AF;
+    border-color: #55A3AF;
+}
+.button a:hover{
+    text-decoration: #88bfff;
+}
+.card{
+    background-color: #FBF9F9;
+}
+
+@media(max-width: 425px){
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+    .borderbuttonTwo{
+        width: 300px;
+        margin-bottom: 90px;
+        margin-top: 60px;
+    }
+    .fonction{
+        margin-top: 20px;
+    }
+    .fonctionTwo{
+        border-right: none;
+        border-bottom: ridge 5px black;
+    }
+
+}
+@media(max-width: 768px){
+
+}

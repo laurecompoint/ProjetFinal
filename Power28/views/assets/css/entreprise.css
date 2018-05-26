@@ -1,0 +1,31 @@
+.compagny{
+    background-image: url("../img/entreprise.png");
+    background-size: 1450px;
+    height: 570px;
+}
+.borderbutton a{
+    color: black;
+}
+.borderbuttonTwo{
+    border: ridge 5px black;
+    margin-top: 10px;
+    background-color: white;
+    height: 50px;
+}
+.address{
+    background-color: #50719F;
+
+}
+.paris, .toulouse{
+    border-left: ridge 5px black;
+}
+@media(max-width: 425px){
+    .compagny{
+        background-size: 806px;
+        height: 310px;
+    }
+    .borderbuttonTwo{
+        height: 50px;
+    }
+
+}

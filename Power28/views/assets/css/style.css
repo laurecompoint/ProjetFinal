@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Skia', sans-serif;
+    background-color: #FBF9F9;
+}
+#logo{
+    width: 200px;
+    height: 60px;
+}
+.NavColor{
+    background-color: #55A3AF;
+    color: white;
+}
+.NavColor a{
+    color: white;
+}
+.stock{
+height: 400px;
+}
+.logicielstock, .blockContact, .test{
+    background-color: #FBF9F9;
+}
+
+.logiciel{
+    margin-right: -60px;
+}
+.borderbuttonOne{
+    border: ridge 5px black;
+    width: 180px;
+}
+.borderbutton a{
+    color: black;
+}
+.borderbutton a:hover{
+    text-decoration: none;
+}
+.fonction{
+    background-color: #FBF9F9;
+    padding-bottom: 60px;
+
+}
+.borderbuttonTwo{
+    border: ridge 5px black;
+    width: 600px;
+    margin-bottom:50px;
+    margin-top: 30px;
+    background-color: white;
+}
+.mail{
+    border-right: ridge 5px black;
+}
+.contact{
+    border-left: ridge 5px black;
+}
+.blockContact{
+    padding-bottom: 50px;
+}
+.color{
+    background-color: #2E7293;
+}
+#icon{
+    position: absolute;
+    left: 1120px;
+    top: 1440px;
+    height: 50px;
+    width: 50px;
+
+}
+#iconTwo{
+    position: absolute;
+    left: 1325px;
+    top: 1480px;
+    height: 50px;
+    width: 50px;
+
+}
+#iconThree{
+    position: absolute;
+    left: 1102px;
+    top: 1370px;
+    height: 50px;
+    width: 50px;
+
+}
+#iconFoor{
+    position: absolute;
+    left: 1100px;
+    top: 1492px;
+    height: 50px;
+    width: 50px;
+
+}
+#iconFive{
+    position: absolute;
+    left: 1220px;
+    top: 1413px;
+    height: 50px;
+    width: 40px;
+
+}
+#iconSix{
+    position: absolute;
+    left: 1188px;
+    top: 1374px;
+    height: 50px;
+    width: 50px;
+}
+.footer{
+    background-color: #55A3AF;
+    padding-bottom: 10px;
+    padding-top: 3px;
+}
+.picture{
+    height: 150px;
+}
+.test{
+    margin: auto;
+}
+@media(max-width: 425px){
+    #logo{
+       width: 100px;
+       height: 50px;
+    }
+    #icon{
+        position: absolute;
+        left: 10px;
+        top: 1600px;
+    }
+    #iconTwo{
+        position: absolute;
+        left: 10px;
+        top: 1600px;
+    }
+    #iconThree{
+        position: absolute;
+        left: 10px;
+        top: 1600px;
+    }
+    #iconFoor{
+        position: absolute;
+        left: 10px;
+        top: 1600px;
+    }
+    #iconFive{
+        position: absolute;
+        left: 10px;
+        top: 1600px;
+    }
+    #iconSix{
+        position: absolute;
+        left: 10px;
+        top: 1600px;
+    }
+    .logiciel{
+        margin-top: 30px;
+    }
+    .borderbuttonTwo{
+        width: 300px;
+        margin-bottom: 90px;
+        margin-top: 60px;
+    }
+    .mail{
+        border: none;
+    }
+    .fonction{
+        margin-top: 20px;
+    }
+
+}
+@media(max-width: 768px){
+    #icon{
+        position: absolute;
+        left: 90px;
+        top: 1600px;
+    }
+    .logiciel{
+        margin-right: 10px;
+    }
+    #iconTwo{
+        position: absolute;
+        left: 90px;
+        top: 1600px;
+    }
+    #iconThree{
+        position: absolute;
+        left: 90px;
+        top: 1600px;
+    }
+    #iconFoor{
+        position: absolute;
+        left: 90px;
+        top: 1600px;
+    }
+    #iconFive{
+        position: absolute;
+        left: 90px;
+        top: 1600px;
+    }
+    #iconSix{
+        position: absolute;
+        left: 90px;
+        top: 1600px;
+    }
+
+
+
+}
