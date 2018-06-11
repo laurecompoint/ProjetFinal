@@ -13,11 +13,11 @@ function getCategory($categoryId){
 
 function getCategories(){
 
-	$db = dbConnect();
+    $db = dbConnect();
 
-	$query = $db->query('SELECT * FROM category');
+    $query = $db->query('SELECT * FROM category');
 
-	return $query->fetchAll();
+    return $query->fetchAll();
 
 
 }
