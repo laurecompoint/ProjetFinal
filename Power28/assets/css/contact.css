@@ -1,0 +1,40 @@
+body{
+    background-color: #FBF9F9;
+}
+.contact{
+    background-color: #50719f;
+    height: 100px;
+}
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+@media(max-width: 425px){
+    .inputcontact{
+        width: 400px;
+        margin-left: -100px;
+    }
+    label p{
+        font-size: 40px;
+    }
+    .contact h4{
+        font-size: 60px;
+
+    }
+
+}
+@media(max-width: 768px){
+    .inputcontact{
+        margin-left: -100px;
+    }
+    label p{
+        font-size: 40px;
+    }
+    .contact h4{
+        font-size: 60px;
+
+    }
+}

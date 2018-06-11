@@ -1,0 +1,30 @@
+.NavColor {
+    background-color: #55A3AF;
+    color: white;
+}
+.NavColor a{
+    color: white;
+}
+#logo{
+    width: 200px;
+    height: 60px;
+}
+footer{
+    background-color: #55A3AF;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.margine{
+    margin-left: 230px;
+}
+.margine a{
+    color: white;
+}
+@media(max-width: 425px) {
+    #logo {
+        width: 100px;
+        height: 50px;
+    }
+}
