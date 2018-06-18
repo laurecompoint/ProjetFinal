@@ -5,13 +5,11 @@ $categories = admincategory();
 
 if(isset($_GET['category_id']) && isset($_GET['action']) && $_GET['action'] == 'delete'){
 
-    $delete = admindelate();
-    if($delete){
-        $message = "Suppression efféctuée.";
-    }
-    else{
-        $message = "Impossible de supprimer la séléction.";
-    }
+    admindelate([ $_GET['category_id'] ]);
+    $message = "Suppression efféctuée.";
+    header('location:index.php?admin=category_list');
+    exit;
+
 
 }
 

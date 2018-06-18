@@ -1,7 +1,8 @@
 
 <head>
-    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/product.css">
 </head>
+<body class="body">
 <?php require ('Partials/nav.php');?>
 <div class="row test container-fluid d-flex justify-content-between">
     <div class="d-flex flex-column col-md-5 logiciel mt-5">
@@ -21,43 +22,27 @@
             - Hébergement de votre base de donnée non inclus, voir la section Hébergement & FileMaker Server.
         </p>
 
-        <h2>Les options d'achat</h2>
+        <h2>Option d'achat</h2>
 
         <div class="row">
 
-        <div class="checkbox d-flex flex-column col-5">
+            <div class="checkbox d-flex flex-column col-md-5 justify-content-start">
 
-        <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck1">
-            <label class="custom-control-label" for="customCheck1">Hebergements</label>
-            <p class="ml-3" id="price1">49€</p>
-        </div>
+            <div class="custom-control custom-checkbox d-flex justify-content-between">
+                <input type="checkbox" id="myCheck" class="mt-1"  onclick="myFunction()">
+                <label class="" >Hebergements</label>
+                <p class="ml-3 nombre2" name="nombre2" value="49">49€</p>
+            </div>
 
-        <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck2">
-            <label class="custom-control-label" for="customCheck2">Imprimante </label>
-            <p class="ml-3" id="price2">140,15€</p>
-        </div>
+            </div>
 
-        <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck3">
-            <label class="custom-control-label" for="customCheck3">Opticon scan</label>
-            <p class="ml-3" id="price3">Prix</p>
-        </div>
+            <div class="flex-column col-md-7">
+            <div class="row container-fluid">
+                <P class="totaloption mt-3">Prix Total : </P>
+                <p id="total" class="mt-3"></p>
+            </div>
 
-        <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck4">
-            <label class="custom-control-label" for="customCheck4">Ettiquesttes Dymos</label>
-            <p class="ml-3" id="price4">Prix</p>
-        </div>
-
-        </div>
-
-            <div class="flex-column col-7">
-
-                <P id="total" class="mt-5">Prix Total : 1200€</P>
-
-                <form class="d-flex justify-content-start mt-5" action="cart.php" method="post">
+                <form class="d-flex justify-content-start" action="cart.php" method="post">
                     <button class="borderbuttonOne" type="submit">Acheter</button>
                     <input type="hidden" name="product_id" value="<?php echo $product['id'] ?>">
                 </form>
@@ -66,24 +51,6 @@
     </div>
 
 </div>
-
-<script>
-    (function($) {
-
-
-
-
-
-    })
-
-
-
-
-
-
-</script>
-
-
 
 
     <div class="product d-flex flex-column col-md-12 text-justify">
@@ -213,5 +180,23 @@
 </div>
 
 <?php require 'Partials/footer.php';?>
-<link type="js" rel="stylesheet" href="assets/js/script.js">
+</body>
 
+<script>
+
+    function myFunction() {
+        var checkBox = document.getElementById("myCheck");
+        var text = document.getElementById("total");
+        if (checkBox.checked == true){
+            text.style.display = "block";
+            var somme= 1200 + 49;
+            $("<p>" + somme + "€" + "</p>").appendTo('#total');
+        } else {
+            text.style.display = "none";
+        }
+    }
+
+
+
+
+</script>

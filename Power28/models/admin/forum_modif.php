@@ -7,48 +7,47 @@ function adminforum()
     return $query->fetchAll();
 }
 
-function forumdelate()
+function forumdelate($forum_id)
 {
     $db = dbConnect();
     $query = $db->prepare('DELETE FROM forum WHERE id = ?');
-    $query->execute ([ $_GET['forum_id'] ]);
+    $query->execute ([ $forum_id ]);
 
 }
 
-function ajouterforum(){
+function insertforum($name, $content,  $category_id, $is_published)
+{
     $db = dbConnect();
-    $query = $db->prepare('INSERT INTO forum (question, reponse, category_id) VALUES (?, ?, ?, ? NOW())');
-    $newforum = $query->execute(
-        [
-            $_POST['name'],
-            $_POST['content'],
-            $_POST['category_id'],
-            $_POST['is_published'],
-            $_POST['created_at'],
-        ]
-    );
-    return $newforum;
+
+
+    $forum = $db->prepare('INSERT INTO forum (name, content, category_id, is_published, created_at) VALUES(?, ?, ?, ?, NOW())');
+    $forum ->execute(array(
+        $name,
+        $content,
+        $category_id,
+        $is_published,
+    ));
+    $forum ->closeCursor();
 }
-function modifforum(){
+function modifforum($name, $content, $category, $is_published, $id){
+
     $db = dbConnect();
 
     $query = $db->prepare('UPDATE forum SET
 		name = :name,
 		content = :content,
 		category_id = :category_id,
-		is_published = :is_published,
-		created_at = created_at,
+		is_published = :is_published
 		WHERE id = :id'
     );
 
     $query->execute(
         [
-            'name' =>  $_POST['name'],
-            'content' => $_POST['content'],
-            'category_id' => $_POST['category_id'],
-            'is_published' => $_POST['is_published'],
-            'created_at' => $_POST['created_at'],
-            'id' => $_POST['id'],
+            'name' =>  $name,
+            'content' => $content,
+            'category_id' => $category,
+            'is_published' => $is_published,
+            'id' => $id,
         ]
     );
 }

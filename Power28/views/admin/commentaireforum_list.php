@@ -47,7 +47,7 @@
                     <td><?php echo htmlentities($commentaire['created_at']); ?></td>
                     <td class="row">
                         <a href="index.php?admin=commentaire_modif&commentaire_id=<?php echo $commentaire['id']; ?>&action=edit" class="btn btn-warning mr-1">Modifier</a>
-                        <a onclick="return confirm('Are you sure?')" href="index.php?admin=commentaire_modif&commentaire_id=<?php echo $commentaire['id']; ?>&action=delete" class="btn btn-danger col-6">Supprimer</a>
+                        <a onclick="return confirm('Are you sure?')" href="index.php?admin=commentaire_list&commentaire_id=<?php echo $commentaire['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
                     </td>
                 </tr>
 

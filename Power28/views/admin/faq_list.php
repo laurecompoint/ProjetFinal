@@ -31,7 +31,6 @@
         <tr>
             <th>#</th>
             <th>Question</th>
-            <th>Reponses</th>
             <th>Action</th>
         </tr>
         </thead>
@@ -44,10 +43,9 @@
                     <!-- htmlentities sert à écrire les balises html sans les interpréter -->
                     <th><?php echo htmlentities($faq['id']); ?></th>
                     <td><?php echo htmlentities($faq['question']); ?></td>
-                    <td><?php echo htmlentities($faq['reponse']); ?></td>
                     <td>
                         <a href="index.php?admin=faq_modif&faq_id=<?php echo $faq['id']; ?>&action=edit" class="btn btn-warning">Modifier</a>
-                        <a onclick="return confirm('Are you sure?')" href="index.php?admin=faq_modif&faq_id=<?php echo $faq['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
+                        <a onclick="return confirm('Are you sure?')" href="index.php?admin=faq_list&faq_id=<?php echo $faq['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
                     </td>
                 </tr>
 

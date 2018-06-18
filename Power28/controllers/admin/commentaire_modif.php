@@ -3,14 +3,17 @@
 require_once('models/admin/commentaire_modif.php');
 
 
-if(isset($_POST['save'])) {
-    ajoutercommentaire();
-    header('location:index.php?admin=commentaire_list');
-    exit;
 
-}
+    if(isset($_POST['save']))
+    {
+        insertcommentaire($_POST['content'], $_POST['forum_id'], $_POST['is_published'], $_POST['created_at']);
+        header('location:index.php?admin=commentaire_list');
+        exit;
+    }
+
+
 if(isset($_POST['update'])){
-    modifcommentaire();
+    modifcommentaire($_POST['content'], $_POST['forum_id'],  $_POST['is_published'], $_POST['created_at'], $_POST['id']);
     header('location:index.php?admin=commentaire_list');
     exit;
 

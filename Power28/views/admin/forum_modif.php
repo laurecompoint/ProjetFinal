@@ -40,8 +40,8 @@
         <div class="form-group">
             <label for="is_published"> Publié ?</label>
             <select class="form-control" name="is_published" id="is_published">
-                <option value="0" <?php if(isset($forum) && $article['is_published'] == 0): ?>selected<?php endif; ?>>Non</option>
-                <option value="1" <?php if(isset($forum) && $article['is_published'] == 1): ?>selected<?php endif; ?>>Oui</option>
+                <option value="0" <?php if(isset($forum) && $forum['is_published'] == 0): ?>selected<?php endif; ?>>Non</option>
+                <option value="1" <?php if(isset($forum) && $forum['is_published'] == 1): ?>selected<?php endif; ?>>Oui</option>
             </select>
         </div>
 

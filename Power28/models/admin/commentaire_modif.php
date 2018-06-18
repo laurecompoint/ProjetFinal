@@ -7,41 +7,42 @@ function admincommentaire()
     return $query->fetchAll();
 }
 
-function commentairedelate()
+function commentairedelate($commentaireid)
 {
     $db = dbConnect();
     $query = $db->prepare('DELETE FROM commentaire WHERE id = ?');
-    $query->execute ([ $_GET['commentaire_id'] ]);
+    $query->execute ([ $commentaireid]);
 
 }
-function ajoutercommentaire(){
+function insertcommentaire($content, $forum_id, $is_published)
+{
     $db = dbConnect();
-    $query = $db->prepare('INSERT INTO commentaire (content, forum_id, is_published, created_at) VALUES (?, ?, ?, NOW())');
-    $newcommentaire = $query->execute(
-        [
-            $_POST['content'],
-            $_POST['is_published'],
-            $_POST['forum_id'],
-        ]
-    );
-    return $newcommentaire;
+
+
+    $subject = $db->prepare('INSERT INTO commentaire (content, forum_id, is_published, created_at) VALUES(?, ?, ?, NOW())');
+    $subject ->execute(array(
+        $content,
+        $forum_id,
+        $is_published,
+    ));
+    $subject ->closeCursor();
 }
-function modifcommentaire(){
+function modifcommentaire($content, $is_published, $forum_id, $id){
     $db = dbConnect();
 
     $query = $db->prepare('UPDATE commentaire SET
 		content = :content,
 		forum_id = :forum_id,
-		is_published = :is_published,
+		is_published = :is_published
 		WHERE id = :id'
     );
 
     $query->execute(
         [
-            'content' =>  $_POST['content'],
-            'is_published' => $_POST['is_published'],
-            'forum_id' => $_POST['forum_id'],
-            'id' => $_POST['id'],
+            'content' =>  $content,
+            'is_published' => $is_published,
+            'forum_id' => $forum_id,
+            'id' => $id
         ]
     );
 }

@@ -4,11 +4,13 @@
           <title>Power 28 : Fonctionnaliées</title>
       </head>
 
+      <body class="body">
+
       <?php require ('Partials/nav.php');?>
 
     <div class="fonction d-flex flex-column">
 
-        <div class="borderbutton mt-5 container-fluid ml-3">
+        <div class="borderbutton mt-4 container-fluid ml-3">
             <h2>Les Fonctionnalitées du logiciel</h2>
         </div>
 
@@ -19,30 +21,30 @@
 
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fonctionnaliteone.png" alt="logofonction" class="picture" />
-                   <a href="#accueil"><h4 class="mr-5 text-center text-white">Accueil</h4></a>
+                   <a href="#accueil"><h6 class="mr-5 text-center text-white">Accueil</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/user.png" alt="logofonction" class="picture" />
-                    <a href="#utilisateurs"><h4 class="mr-5 text-white">Utilisateur</h4></a>
+                    <a href="#utilisateurs"><h6 class="mr-5 text-white">Utilisateur</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fonctionnalitesix.png" alt="logofonction" class="picture" />
-                    <a href="#transaction"><h4 class="mr-4 text-white">Transaction</h4></a>
+                    <a href="#transaction"><h6 class="mr-4 text-white">Transaction</h6></a>
                 </div>
             </div>
 
             <div class="row col-md-6 d-flex justify-content-around">
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fonctionnalitethree.png" alt="logofonction" class="picture" />
-                    <a href="#parametres"><h4 class="mr-4 text-white">Paramètre</h4></a>
+                    <a href="#parametres"><h6 class="mr-4 text-white">Paramètre</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fonctionnalitefoors.png" alt="logofonction" class="picture" />
-                    <a href="#historique"><h4 class="mr-4 text-white">Historique</h4></a>
+                    <a href="#historique"><h6 class="mr-4 text-white">Historique</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fonctionnalitefive.png" alt="logofonction" class="picture" />
-                    <a href="#categories"><h4 class="mr-4 text-white">Catégories</h4></a>
+                    <a href="#categories"><h6 class="mr-4 text-white">Catégories</h6></a>
                 </div>
             </div>
         </div>
@@ -53,30 +55,30 @@
             <div class="row col-md-6 d-flex justify-content-around">
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/liste.png" alt="logofonction" class="picture" />
-                    <a href="#stock"><h4 class="mr-5 text-white">Inventaire</h4></a>
+                    <a href="#stock"><h6 class="mr-5 text-white">Inventaire</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fonctionnaliteten.png" alt="logofonction" class="picture" />
-                    <a href="#lieux"><h4 class="mr-4 text-white">Lieux</h4></a>
+                    <a href="#lieux"><h6 class="mr-4 text-white">Lieux</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fourniseur.png" alt="logofonction" class="picture" />
-                    <a href="#fourniseurs"><h4 class="mr-4 text-white">Fourniseurs</h4></a>
+                    <a href="#fourniseurs"><h6 class="mr-4 text-white">Fourniseurs</h6></a>
                 </div>
             </div>
 
             <div class="row col-md-6 d-flex justify-content-around">
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fonctionnaliteeight.png" alt="logofonction" class="picture" />
-                    <a href="#catalogue"><h4 class="mr-4 text-white">Catalogue</h4></a>
+                    <a href="#catalogue"><h6 class="mr-4 text-white mt-1">Catalogue</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fonctionnalitetwo.png" alt="logofonction" class="picture" />
-                    <a href="#fabricants"><h4 class="mr-4 text-white">Fabricants</h4></a>
+                    <a href="#fabricants"><h6 class="mr-4 text-white">Fabricants</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fonctionnalitetwelve.png" alt="logofonction" class="picture" />
-                    <a href="#comandes"><h4 class="mr-4 text-center text-white">Commandes</h4></a>
+                    <a href="#commandes"><h6 class="mr-4 text-center text-white">Commandes</h6></a>
                 </div>
 
             </div>
@@ -152,7 +154,7 @@
             </div>
         </div>
 
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/catalogue4.png" alt="fonction1" class="fonctionOne">
@@ -171,7 +173,7 @@
             </div>
         </div>
 
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/catalogue5.png" alt="fonction1" class="fonctionOne">
@@ -186,7 +188,7 @@
             </div>
         </div>
 
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/catalogue6.png" alt="fonction1" class="fonctionOne">
@@ -200,7 +202,7 @@
             </div>
         </div>
 
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/catalogue7.png" alt="fonction1" class="fonctionOne">
@@ -211,7 +213,7 @@
 
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/catalogue8.png" alt="fonction1" class="fonctionOne">
@@ -299,75 +301,90 @@
 
         </div>
     </div>
+      <h3 id="transactions" class="page mt-5 title container text-left">Transactions</h3>
 
-    <h3 id="transaction" class="mt-3 title container">Fabricants</h3>
-    <div class="row d-flex justify-content-center">
+      <div id="stock" class="row d-flex justify-content-center">
 
-        <div class="d-flex flex-column col-md-6" id="fabricant">
+          <div class="d-flex flex-column col-md-6">
+              <img src="assets/img/imgfonction/transaction1.png" alt="fonction1" class="fonctionOne">
+          </div>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="assets/img/imgfonction/transaction1.png" alt="fonction1" class="col-10 fonctionOne">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/imgfonction/transaction2.png" alt="fonction1" class="col-10 fonctionOne">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+              Visualisez le détail d'une transaction de stock ainsi que toutes ses données financières.
+              C'est ici que vous apercevrez la granularité fine d'une gestion de stock optimisée !
 
-        <div class="text bg-white block col-md-6 text-center d-flex align-items-center fabricantstext">
-            <p class="ml-3">Ajoutez tous les fabricants de vos produits en stock à votre base de donnée !
-           <br> Consultez tous les produits rattachés à un fabricant ainsi que leur disponibilité en stock.
-                Vous pourrez également connaître le montant du stock par fabricant.</p>
+          </div>
+      </div>
 
-        </div>
-    </div>
+      <div class="row d-flex justify-content-center mt-5">
 
-    <h3 id="transaction" class="mt-5 title container">Fourniseurs</h3>
-    <div class="row d-flex justify-content-center">
+          <div  class="d-flex flex-column col-md-6">
+              <img src="assets/img/imgfonction/transaction2.png" alt="fonction1" class="fonctionOne stock">
+          </div>
 
-        <div class="d-flex flex-column col-md-6">
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+              Chaque produit dans votre stock peut être rattaché à un lieu préalablement créé.
 
-            <div id="carouselExampleIndicators" class="carousel slide fourniseursimage" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="assets/img/imgfonction/fournisseurs1.png" alt="fonction1"  class="col-10 fonctionOne">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/imgfonction/fournisseurs2.png" alt="fonction1"  class="col-10 fonctionOne">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
+          </div>
+      </div>
 
-        <div class="text fourniseurstext bg-white block col-md-6 text-center d-flex align-items-center">
-           <p> Ajoutez tous les fournisseurs de vos produits en stock à votre base de donnée !
-            Cela permet ensuite la création des références fournisseur.
-            <br>Visualisez toutes vos références fournisseur liées à vos produits directement à partir de
-                votre liste de fournisseurs.</p>
+      <h3 id="fabricants" class="page mt-5 title container text-left">Fabricants</h3>
 
-        </div>
-    </div>
+      <div id="stock" class="row d-flex justify-content-center">
 
-    <h3 id="transaction" class="mt-5 title container">Commandes</h3>
+          <div class="d-flex flex-column col-md-6">
+              <img src="assets/img/imgfonction/fabricants1.png" alt="fonction1" class="fonctionOne">
+          </div>
+
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+              Ajoutez tous les fabricants de vos produits en stock à votre base de donnée !
+
+          </div>
+      </div>
+
+      <div class="row d-flex justify-content-center mt-5">
+
+          <div  class="d-flex flex-column col-md-6">
+              <img src="assets/img/imgfonction/fabricants2.png" alt="fonction1" class="fonctionOne stock">
+          </div>
+
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+              Consultez tous les produits rattachés à un fabricant ainsi que leur disponibilité en stock.
+              Vous pourrez également
+              connaître le montant du stock par fabricant.
+
+          </div>
+      </div>
+
+      <h3 id="fourniseurs" class="page mt-5 title container text-left">Fourniseurs</h3>
+
+      <div id="stock" class="row d-flex justify-content-center">
+
+          <div class="d-flex flex-column col-md-6">
+              <img src="assets/img/imgfonction/fournisseurs1.png" alt="fonction1" class="fonctionOne">
+          </div>
+
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+              Ajoutez tous les fournisseurs de vos produits en stock à votre base de donnée !
+              Cela permet ensuite la création des références fournisseur.
+
+          </div>
+      </div>
+
+      <div class="row d-flex justify-content-center mt-5">
+
+          <div  class="d-flex flex-column col-md-6">
+              <img src="assets/img/imgfonction/fournisseurs2.png" alt="fonction1" class="fonctionOne stock">
+          </div>
+
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+              Visualisez toutes vos références fournisseur liées à vos produits directement
+              à partir de votre liste de fournisseurs.
+
+          </div>
+      </div>
+
+    <h3 id="commandes" class="mt-5 title container">Commandes</h3>
     <div class="row d-flex justify-content-center">
 
         <div class="d-flex flex-column col-md-6 commandesimage">
@@ -389,7 +406,7 @@
     </h5>
     <div id="accordion" role="tablist">
     <div id="collapseFoor" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/commande2.png" alt="fonction1" class="fonctionOne">
@@ -402,7 +419,7 @@
 
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/commande3.png" alt="fonction1" class="fonctionOne">
@@ -415,7 +432,7 @@
 
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/commande4.png" alt="fonction1" class="fonctionOne">
@@ -433,7 +450,7 @@
 
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/commande5.png" alt="fonction1" class="fonctionOne">
@@ -447,7 +464,7 @@
 
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/commande6.png" alt="fonction1" class="fonctionOne">
@@ -462,7 +479,7 @@
             </div>
         </div>
 
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/commande7.png" alt="fonction1" class="fonctionOne">
@@ -473,7 +490,7 @@
                 </p>
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/commande8.png" alt="fonction1" class="fonctionOne">
@@ -484,7 +501,7 @@
                 </p>
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/commande9.png" alt="fonction1" class="fonctionOne">
@@ -497,7 +514,7 @@
 
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/commande10.png" alt="fonction1" class="fonctionOne">
@@ -514,7 +531,7 @@
 
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
                 <img src="assets/img/imgfonction/commande11.png" alt="fonction1" class="fonctionOne">
@@ -533,42 +550,33 @@
     </div>
     </div>
 
-    <h3 id="lieux" class="mt-4 title container text-left">Lieux</h3>
+      <h3 id="lieux" class="page mt-5 title container text-left">Lieux</h3>
 
-    <div class="row d-flex justify-content-center">
+      <div id="stock" class="row d-flex justify-content-center">
 
-        <div class="d-flex flex-column col-md-6">
+          <div class="d-flex flex-column col-md-6">
+              <img src="assets/img/imgfonction/lieux1.png" alt="fonction1" class="fonctionOne">
+          </div>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="assets/img/imgfonction/lieu1.png" alt="fonction1"  class="col-10 fonctionOne">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/imgfonction/lieu2.png" alt="fonction1" class="col-10 fonctionOne">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+              Gérez vos lieux directement dans Power28 pour optimiser les emplacements de vos entrepôts.
 
-        <div class="text lieuxtext bg-white block col-md-6 text-center d-flex align-items-center">
-            <p>Gérez vos lieux directement dans Power28 pour optimiser les emplacements de vos entrepôts.
+          </div>
+      </div>
 
-                <br>Prenez connaissance de la valeur de votre stock par lieu et réalisez un
-                tracking grâce aux étiquettes de lieu.
-            Consultez le détail d'une commande que vous avez créé ou celles créées par vos collaborateurs
-            </p>
+      <div class="row d-flex justify-content-center mt-5">
 
-        </div>
-    </div>
+          <div  class="d-flex flex-column col-md-6">
+              <img src="assets/img/imgfonction/lieux2.png" alt="fonction1" class="fonctionOne stock">
+          </div>
+
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+              Dans votre gestion d'utilisateurs, il vous est possible de consulter
+              l'historique de l'activité réalisé sur Power28 par collaborateur.
+              Un filtrage par type d'activité est également possible.
+
+          </div>
+      </div>
 
   <h3 id="historique" class="mt-5 title container text-left">Historique</h3>
     <div class="row d-flex justify-content-center imagehistorique">
@@ -578,47 +586,38 @@
         </div>
 
         <div class="text bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
-            <p>Gérez tous les collaborateurs pouvant utiliser les fonctionnalités de Power28.
-
-            </p>
+            Consultez toute l'activité liée à votre stock, réalisée par vous et vos collaborateurs directement dans le puissant système d'historique développé dans Power28.
 
         </div>
     </div>
-    <h3 id="lieux" class="mt-4 title container text-left">Utilisateurs</h3>
 
-    <div class="row d-flex justify-content-center">
+      <h3 id="utilisateurs" class="page mt-5 title container text-left">Utilisateurs</h3>
 
-        <div class="d-flex flex-column col-md-6">
+      <div id="stock" class="row d-flex justify-content-center">
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="assets/img/imgfonction/utilisateurs1.png" alt="fonction1"  class="col-10 fonctionOne">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/imgfonction/utilisateurs2.png" alt="fonction1" class="col-10 fonctionOne">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
+          <div class="d-flex flex-column col-md-6">
+              <img src="assets/img/imgfonction/utilisateurs1.png" alt="fonction1" class="fonctionOne">
+          </div>
 
-        <div class="text utilisateurtext bg-white block col-md-6 text-center d-flex align-items-center">
-            <p>Gérez tous les collaborateurs pouvant utiliser les fonctionnalités de Power28.
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+              Gérez tous les collaborateurs pouvant utiliser les fonctionnalités de Power28.
 
-            <br>Dans votre gestion d'utilisateurs, il vous est possible de consulter
-                l'historique de l'activité réalisé sur Power28 par collaborateur.
-                Un filtrage par type d'activité est également possible.
-            </p>
-        </div>
-    </div>
+          </div>
+      </div>
+
+      <div class="row d-flex justify-content-center mt-5">
+
+          <div  class="d-flex flex-column col-md-6">
+              <img src="assets/img/imgfonction/utilisateurs2.png" alt="fonction1" class="fonctionOne stock">
+          </div>
+
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+              Dans votre gestion d'utilisateurs, il vous est possible de consulter
+              l'historique de l'activité réalisé sur Power28 par collaborateur.
+              Un filtrage par type d'activité est également possible.
+
+          </div>
+      </div>
 
     <h3 id="parametres" class="mt-5 title container text-left">Paramètres</h3>
     <div class="row d-flex justify-content-center parametretext">
@@ -638,5 +637,5 @@
 
       <?php require 'Partials/footer.php';?>
 
-
+</body>
 

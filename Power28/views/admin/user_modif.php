@@ -31,7 +31,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="name">Firstname:</label><br>
+            <label for="name">Adresse</label><br>
             <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['adresse']?>"<?php endif; ?> type="text" placeholder="adresse" name="adresse" id="adresse" />
         </div>
         <div class="form-group">

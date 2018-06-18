@@ -1,5 +1,4 @@
 <?php
-
 function getForum( $forumId ){
 
 	$db = dbConnect();
@@ -16,7 +15,6 @@ function getForum( $forumId ){
     return $query->fetch();
 
 }
-
 function getForums()
 {
 
@@ -38,45 +36,36 @@ function getCommentaire()
 
     return $query->fetchAll();
 
-    if(isset($_POST['save'])){
-
-    }
-
 }
 
-function postcomments()
+function commentaire($author, $content, $forum_id, $is_published)
 {
     $db = dbConnect();
 
-    $comments = $db->prepare('INSERT INTO commentaire (content, forum_id, is_published, created_at) VALUES(?, ?, ?, NOW())');
-    $affectedLines = $comments->execute([
-            $_POST['content'],
-            $_POST['forum_id'],
-            $_POST['is_published']
-        ]
-    );
-    return $affectedLines;
 
+    $commentaire = $db->prepare('INSERT INTO commentaire (author, content, forum_id, is_published, created_at) VALUES(?, ?, ?, ?, NOW())');
+    $commentaire ->execute(array(
+        $author,
+        $content,
+        $forum_id,
+        $is_published,
+    ));
+    $commentaire ->closeCursor();
 }
-
-function postsubject()
+function subject($author, $name, $content, $category_id,  $is_published)
 {
     $db = dbConnect();
 
-    $subjects = $db->prepare('INSERT INTO forum (name, content, category_id, is_published, created_at) VALUES(?, ?, ?, ?, NOW())');
-    $affectedLines = $subjects->execute([
-            $_POST['name'],
-            $_POST['content'],
-            $_POST['category_id'],
-            $_POST['is_published']
-        ]
-    );
-    return $affectedLines;
 
-}
-if(isset($_POST['savesubject'])){
-    postsubject();
+    $subject = $db->prepare('INSERT INTO forum (author, name, content, category_id, is_published, created_at) VALUES(?, ?, ?, ?, ?, NOW())');
+    $subject ->execute(array(
+        $author,
+         $name,
+         $content,
+         $category_id,
+         $is_published,
+    ));
+    $subject ->closeCursor();
 }
 
-?>
 

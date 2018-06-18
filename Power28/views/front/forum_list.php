@@ -1,9 +1,10 @@
 <head>
-  <link rel="stylesheet" href="assets/css/forumlist.css">
+  <link rel="stylesheet" href="assets/css/forum.css">
 
   <title>Power 28 : Forum </title>
 
 </head>
+<body class="body">
 <?php require ('Partials/nav.php');?>
 <div class="subjectforum d-flex flex-column justify-content-center">
     <?php require 'subject.php'; ?>
@@ -12,49 +13,73 @@
 
                 <div class="col-md-9 mt-5">
 
-                    <h2>Nos sujects de forum sur le logiciel</h2>
+                    <h3>Nos sujects sur les <?php if(isset($currentCategory)): ?><?php echo $currentCategory['name']; ?><?php endif; ?></h3>
 
                 </div>
 
-                <div class="row col-md-12 mt-5">
+                <div class="row col-md-12 mt-5 d-flex justify-content-between">
 
                     <?php foreach($forums as $key => $topic): ?>
-                    <div class="col-6">
-                        Sujet : <a class="col-6" href="index.php?page=forum&forum_id=<?php echo $topic['id']; ?>"><?php echo $topic['name']; ?></a>
+                    <div class="col-5">
+                        <i class="far fa-file"></i> Sujet :  <a class="col-6" href="index.php?page=forum&forum_id=<?php echo $topic['id']; ?>"><?php echo $topic['name']; ?></a>
                     </div>
-                    <div class="col-6">
-                         <p class="col-6" ><?php echo $topic['created_at']; ?></p>
+                    <div class="col-2 row d-flex justify-content-around">
+                        <i class="far fa-user"></i> Auteur : <p class="col-6"><?php echo htmlentities($topic['author']);  ?></p>
                     </div>
-                     <?php endforeach; ?>
+                    <div class="col-5">
+                        <div class="row d-flex justify-content-center">
+                            <i class="far fa-calendar-alt col-1"></i>
+                            <p class="col-3" ><?php echo $topic['created_at']; ?></p>
+                        </div>
 
+                    </div>
+
+                    <?php endforeach; ?>
                 </div>
 
 
 
-                <div class="mt-5 col-md-9">
+                <div class="mt-5 col-md-12 row align-items-center justify-content-center">
 
-                    <h2>Ajouter un sujet</h2>
+                    <div class="blocktext col-5 bg-white text-center d-flex align-items-center justify-content-center">
 
-                    <form action="index.php?page=forum_list&category_id=<?php echo $forum['category_id'] ?>" method="post">
-                        <div class="form-group col-5 mt-5">
-                            <label>Titre du suject</label>
+                    <p>Possibilité d'ajouter un sujet si vous avez une question à poser.<br>
+                       Vous devez être connecter pour pouvoir proposer une nouvelle discution.
+                    </p>
+
+                    </div>
+
+                    <div class="col-6 mt-5">
+
+                    <?php if(isset($messagesubject)): ?>
+                        <div class="text-danger col-12 mb-4 mt-3"><?php echo $messagesubject; ?></div>
+                    <?php endif; ?>
+
+                        <?php if(isset($_SESSION['user'])) : ?>
+
+                    <form action="index.php?page=forum_list&category_id=<?php echo $topic['category_id'] ?>" method="post">
+                        <div class="form-group col-12 mt-4">
+                            <input type="hidden" name="author" value="<?php echo $_SESSION['user']; ?>" class="form-control" id="formGroupExampleInput2" placeholder="Your name">
+                            <label>Titre de vôtre suject</label>
                             <input type="text" name="name" class="form-control" id="formGroupExampleInput2" placeholder="Title Subject"> <br>
                             <label>Contenue de vôtre suject</label>
                             <input type="text" name="content" class="form-control" id="formGroupExampleInput2" placeholder="Contenue">
-                            <input type="hidden" name="category_id" value="<?php echo $forum['category_id']; ?>" placeholder="forum_id" />
+                            <input type="hidden" name="category_id" value="<?php echo $topic['category_id']; ?>" placeholder="forum_id" />
                             <input type="hidden" name="created_at" placeholder="created_at" />
                             <input type="hidden" name="is_published" value="1" placeholder="is_published" />
-                            <button type="button" name="savesubject" class="btn btn-primary mt-4">Envoyer</button>
+                            <input class="btn btn-primary mt-3" type="submit" name="savesubject" value="Valider" />
                         </div>
                     </form>
+
+                        <?php else: ?>
+                        <?php endif; ?>
+
+                    </div>
 
                 </div>
 
 
-
 <?php else: ?>
-
-
 
                 <div class="d-flex flex-column col-12">
 
@@ -75,7 +100,7 @@
                                 <input type="text" name="content" class="form-control" id="formGroupExampleInput2" placeholder="Contenue">
                                 <input type="hidden" name="category_id" value="<?php echo $forum['id']; ?>" placeholder="forum_id" />
                                 <input type="hidden" name="created_at" placeholder="created_at" />                                <input type="hidden" name="is_published" value="1" placeholder="is_published" />
-                                <button type="button" name="savesubject" class="btn btn-primary mt-4">Envoyer</button>
+                                <button type="submit" name="savesubject" class="btn btn-primary mt-4">Envoyer</button>
                             </div>
                         </form>
 
@@ -86,8 +111,9 @@
 
     <?php endif; ?>
 
-<footer>
+<footer class="mt-5">
 
     <?php require('partials/footer.php'); ?>
 
 </footer>
+</body>

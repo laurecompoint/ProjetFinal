@@ -26,9 +26,10 @@
 					</div>
 					<?php endif; ?>
 
-					<table class="table">
-						<thead>
+					<table class="table table-striped">
+						<thead class="">
 							<tr class="">
+                                <th>#</th>
 								<th>Name</th>
 								<th>Action</th>
 							</tr>
@@ -39,7 +40,7 @@
 							<?php foreach($categories as $category): ?>
 
 							<tr class="">
-
+                                <th><?php echo htmlentities($category['id']); ?></th>
 								<td><?php echo htmlentities($category['name']); ?></td>
 
 								<td>

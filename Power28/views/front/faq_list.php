@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/product.css">
     <title>Power 28 : FAQ</title>
 </head>
-<body class="">
+<body class="body">
 
 <?php require ('Partials/nav.php');?>
 
-<div class="">
-<?php require 'faq.php'; ?>
-</div>
-<div class="container-fluid">
+<h2 class="text-center mt-4">Les réponses à vos questions</h2>
 
 
-      <?php if(!empty($faq)): ?>
+    <?php foreach($categories as $category): ?>
 
-        <?php foreach($faq as $key => $faq): ?>
+    <div class="bg-white pb-5 mt-4 col-12">
+    <h3 class="mt-4"><?php echo $category['name']; ?></h3>
+    </div>
 
-      <div id="accordion" role="tablist">
 
+        <?php foreach($faqs as $faq): ?>
 
-       <div id="accordion" role="tablist" class="categoryquestion">
+   <?php if($faq['category_id'] == $category['id']) : ?>
 
-               <a class="collapsed" data-toggle="collapse" href="#<?php echo $faq['id']; ?>" aria-expanded="false" aria-controls="collapseTwo">
-                 <h4 class="test"><?php echo $faq['question']; ?></h4>
+        <div id="accordion" role="tablist">
+
+            <div class="container-fluid">
+           <div id="accordion" role="tablist" class="categoryquestion">
+
+               <a class="collapsed" data-toggle="collapse" href="#<?php echo $faq['id']?>" aria-expanded="false" aria-controls="collapseTwo">
+                     <h5 class="mb-5"><?php echo $faq['question']; ?></h5>
                </a>
 
-            <div id="<?php echo $faq['id']; ?>" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+               <div id="<?php echo $faq['id']?>" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
 
-                  <p class="mt-3"><?php echo $faq['reponse']; ?></p>
+                      <p class="mt-3"><?php echo $faq['reponse']; ?></p>
 
+                </div>
 
+           </div>
             </div>
 
 
-      </div>
 
+            <?php endif; ?>
+
+
+
+          <?php endforeach; ?>
             <?php endforeach; ?>
-
-          <?php else: ?>
-            <!-- s'il n'y a pas d'articles à afficher (catégorie vide ou aucun article publié) -->
-              <p class="mt-5">Aucune question dans cette catégorie...</p>
-          <?php endif; ?>
-
-
-
         </div>
 
-</div>
+
+
+
 <div class="questionmargine d-flex flex-column justify-content-center ml-3">
     <img src="assets/img/question.png" class="question rounded mx-auto d-block" alt="imagefaq"/>
     <a href="index.php?page=forum_list&category_id=1"><h4 class="text-center mt-5">Si vous avez d'autres question ?</h4></a>
 
 </div>
+
+<?php require ('Partials/footer.php');?>
 
 </body>
 </html>

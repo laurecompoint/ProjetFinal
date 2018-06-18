@@ -7,56 +7,57 @@ function adminuser()
     return $query->fetchAll();
 }
 
-function userdelate()
+function userdelate($user_id)
 {
     $db = dbConnect();
     $query = $db->prepare('DELETE FROM user WHERE id = ?');
-    $query->execute ([ $_GET['user_id'] ]);
+    $query->execute ([ $user_id ]);
 
 }
-function ajouteruser(){
+function insertuser($firstname, $lastname, $is_admin, $email, $numerotel, $adresse, $ville, $password)
+{
     $db = dbConnect();
-    $query = $db->prepare('INSERT INTO user (firstname, lastname, is_admin, adresse, ville, numerotel, email, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
-    $newUser = $query->execute(
+    $query = $db->prepare('INSERT INTO user (firstname, lastname, is_admin, email, numerotel, adresse, ville, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+    $query->execute(
         [
-            $_POST['firstname'],
-            $_POST['lastname'],
-            $_POST['is_admin'],
-            $_POST['adresse'],
-            $_POST['ville'],
-            $_POST['numerotel'],
-            $_POST['email'],
-            $_POST['password']
+            $firstname,
+            $lastname,
+            $is_admin,
+            $email,
+            $numerotel,
+            $adresse,
+            $ville,
+            hash('md5', $password)
         ]
     );
-    return $newUser;
 }
-function modifuser(){
+function modifuser($firstname, $lastname, $is_admin, $email, $numerotel, $adresse, $ville, $password, $id){
+
     $db = dbConnect();
 
     $query = $db->prepare('UPDATE user SET
 		firstname = :firstname,
 		lastname = :lastname,
 		is_admin = :is_admin,
-		adresse = :adresse,
-		ville = :ville,
-		numerotel = :numerotel,
 		email = :email,
-		password = :password,
+		numerotel = :numerotel,
+		adresse = :adresse,		
+		ville = :ville,
+		password = :password
 		WHERE id = :id'
     );
 
     $query->execute(
         [
-            'fistname' =>  $_POST['firstname'],
-            'lastname' => $_POST['lastname'],
-            'is_admin' => $_POST['is_admin'],
-            'adresse' => $_POST['adresse'],
-            'ville'   =>  $_POST['ville'],
-            'numerotel' => $_POST['numerotel'],
-            'email' => $_POST['email'],
-            'password' => $_POST['password'],
-            'id' => $_POST['id'],
+            'firstname' =>  $firstname,
+            'lastname' => $lastname,
+            'is_admin' => $is_admin,
+            'email' => $email,
+            'numerotel' => $numerotel,
+            'adresse' => $adresse,
+            'ville'   =>  $ville,
+            'password' => $password,
+            'id' => $id,
         ]
     );
 }

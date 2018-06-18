@@ -1,10 +1,10 @@
 
 <head>
-    <link rel="stylesheet" href="assets/css/entreprises.css">
+    <link rel="stylesheet" href="assets/css/entreprise.css">
     <title>Power 28 : Entreprise</title>
 
 </head>
-<body>
+<body class="body">
 <?php require ('Partials/nav.php');?>
 <div class="compagny d-flex justify-content-start align-items-center container-fluid">
 
@@ -23,49 +23,45 @@
 
 
 </div>
-<div class="container-fluid ml-3">
-    <h2>Nos Adresses</h2>
-</div>
 
-<div class="address row d-flex justify-content-between">
+<div class="d-flex flex-column justify-content-between m-auto bg-white">
 
-    <div class="d-flex flex-column justify-content-center col-md-5">
-        <div class="bordercolor row d-flex justify-content-between col-6">
-            <div class="col-3">
-                <p>Adresse</p>
-                <p>Mail</p>
-                    <P>Téléphone</p>
+        <div class="row d-flex justify-content-center mt-3">
+
+            <div class="col-5">
+                <p><i class="fas fa-map-marker" style="font-size:20px;"></i>Adresse : Toulouse </p>
+                <p>32 Allée Jean Jaurès, 31000 Toulouse</p>
             </div>
-
-            <div class="col-3 d-flex flex-column">
-                <p>Toulouse</p>
+            <div class="row col-4">
+                <p><i class="fas fa-envelope-open" style="font-size:20px;"></i> Mail : </p>
                 <p>Toulouse@gmail.com</p>
+            </div>
+            <div class="row col-3">
+                <p><i class="fas fa-phone-square" style="font-size:20px;"></i>
+
+                    Tel : </p>
                 <p>0145677890</p>
             </div>
 
         </div>
-    </div>
 
+        <div class="row d-flex justify-content-center">
 
-    <div class="d-flex flex-column justify-content-center col-md-5">
-        <div class="bordercolor row d-flex justify-content-between col-6">
-            <div class="col-3">
-                <p>Adresse</p>
-                <p>Mail</p>
-                <p>Téléphone</p>
+            <div class="col-5"
+                <p><i class="fas fa-map-marker" style="font-size:20px;"></i>Adresse : Paris</p>
+
+                <p>  16 Rue de l'Arcade, 75008 Paris</p>
             </div>
-
-            <div class="col-3 d-flex flex-column">
-                <p>Paris</p>
+            <div class="row col-4">
+                <p><i class="fas fa-envelope-open" style="font-size:20px;"></i>  Mail : </p>
                 <p>Paris@gmail.com</p>
+            </div>
+            <div class="row col-3">
+                <p><i class="fas fa-phone-square" style="font-size:20px;"></i> Tel : </p>
                 <p>0145677890</p>
             </div>
 
         </div>
-    </div>
-
-
-
 
 </div>
 

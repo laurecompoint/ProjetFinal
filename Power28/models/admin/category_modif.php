@@ -7,37 +7,40 @@ function admincategory()
     return $query->fetchAll();
 }
 
-function admindelate()
+function admindelate($category_id)
 {
     $db = dbConnect();
     $query = $db->prepare('DELETE FROM category WHERE id = ?');
-    $query->execute ([ $_GET['category_id'] ]);
+    $query->execute ($category_id);
 
 }
-function ajoutercategory(){
+
+function insertcategory($name)
+{
     $db = dbConnect();
-    $query = $db->prepare('INSERT INTO category (name) VALUES (?)');
-    $newCategory = $query->execute(
-        [
-            $_POST['name'],
-        ]
-    );
-    return $newCategory;
+
+    $insert = $db->prepare('INSERT INTO category (name) VALUES (?)');
+    $insert->execute(array(
+        $name,
+    ));
+
 }
-function modifcategory(){
+function modifcategory($name, $id){
+
     $db = dbConnect();
 
     $query = $db->prepare('UPDATE category SET
-		name = :name,
+		name = :name
 		WHERE id = :id'
     );
 
     $query->execute(
         [
-            'name' => $_POST['name'],
-            'id' => $_POST['id']
+            'name' => $name,
+            'id' => $id
         ]
     );
+
 }
 function categoryId()
 {

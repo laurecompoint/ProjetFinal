@@ -5,9 +5,19 @@ function getFaq()
 {
     $db = dbConnect();
 
-    $query = $db->prepare('SELECT * FROM faq WHERE category_id = ? AND is_published = 1 ORDER BY created_at DESC');
+    $query = $db->prepare('SELECT * FROM faq ');
 
-    $query->execute( array($_GET['category_id']) );
+    $query->execute();
+
+    return $query->fetchAll();
+
+
+}
+function getCategories(){
+
+    $db = dbConnect();
+
+    $query = $db->query('SELECT * FROM category');
 
     return $query->fetchAll();
 

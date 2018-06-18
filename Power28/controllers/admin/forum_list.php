@@ -5,16 +5,11 @@ $forums = adminforum();
 
 if(isset($_GET['forum_id']) && isset($_GET['action']) && $_GET['action'] == 'delete'){
 
-    $delete = forumdelate();
-    if($delete){
-        $message = "Suppression efféctuée.";
-    }
-    else{
-        $message = "Impossible de supprimer la séléction.";
-    }
+    forumdelate($_GET['forum_id']);
+    header('location:index.php?admin=forum_list');
+    exit;
 
 }
-
 
 
 

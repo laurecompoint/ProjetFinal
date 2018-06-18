@@ -1,4 +1,3 @@
-
 <?php
 
 if(isset($_GET['page'])){
@@ -9,14 +8,10 @@ if(isset($_GET['page'])){
   }
   elseif($_GET['page'] == 'user'){
       require_once('front/user.php');
-
   }
   elseif($_GET['page'] == 'forum'){
       require_once('front/forum.php');
-      if(isset($_POST['save'])){
-          postcomments();
 
-      }
   }
   elseif($_GET['page'] == 'forum_list'){
       require_once('front/forum_list.php');

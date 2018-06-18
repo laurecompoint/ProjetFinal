@@ -1,6 +1,11 @@
 <?php
 if(isset($_GET['admin'])){
 
+    if(!isset($_SESSION['is_admin']) OR $_SESSION['is_admin'] == 0){
+        header('location:index.php');
+        exit;
+    }
+
   if($_GET['admin'] == 'category_list'){
     require_once('controllers/admin/category_list.php');
 
@@ -15,6 +20,7 @@ if(isset($_GET['admin'])){
       require_once('controllers/admin/faq_list.php');
   }
   elseif($_GET['admin'] == 'faq_modif'){
+
       require_once('controllers/admin/faq_modif.php');
   }
   elseif($_GET['admin'] == 'user_list'){

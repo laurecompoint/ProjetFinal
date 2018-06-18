@@ -3,16 +3,11 @@ require_once('models/admin/user_modif.php');
 
 $users = adminuser();
 
-if(isset($_GET['category_id']) && isset($_GET['action']) && $_GET['action'] == 'delete'){
+if(isset($_GET['user_id']) && isset($_GET['action']) && $_GET['action'] == 'delete'){
 
-    $delete = userdelate();
-    if($delete){
-        $message = "Suppression efféctuée.";
-    }
-    else{
-        $message = "Impossible de supprimer la séléction.";
-    }
-
+        userdelate($_GET['user_id']);
+        header('location:index.php?admin=user_list');
+        exit;
 }
 
 

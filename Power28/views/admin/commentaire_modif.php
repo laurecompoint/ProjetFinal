@@ -19,10 +19,9 @@
             <label for="name">Contenue du commentaire:</label><br>
             <input class="form-control" <?php if(isset($commentaire)): ?>value="<?php echo $commentaire['content']?>"<?php endif; ?> type="text" placeholder="content" name="content" id="content" />
         </div>
-        <div class="form-group">
-            <label for="name">Contenue du commentaire:</label><br>
-            <input class="form-control" <?php if(isset($commentaire)): ?>value="<?php echo $commentaire['created_at']?>"<?php endif; ?> type="text" placeholder="created_at" name="created_at" id="created_at" />
-        </div>
+
+            <input class="form-control" type="hidden" <?php if(isset($commentaire)): ?>value="<?php echo $commentaire['created_at']?>"<?php endif; ?> type="text" placeholder="created_at" name="created_at" id="created_at" />
+
         <div class="form-group">
             <label for="is_published"> Publié ?</label>
             <select class="form-control" name="is_published" id="is_published">

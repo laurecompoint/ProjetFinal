@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Skia', sans-serif;
+}
+.body{
     background-color: #FBF9F9;
 }
 #logo{

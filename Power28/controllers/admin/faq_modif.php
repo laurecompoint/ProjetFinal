@@ -3,13 +3,16 @@
 require_once('models/admin/faq_modif.php');
 
 
-if(isset($_POST['save'])) {
-    ajouterfaq();
+if(isset($_POST['save']))
+{
+
+    insertfaq($_POST['question'], $_POST['reponse'], $_POST['category_id'], $_POST['is_published']);
     header('location:index.php?admin=faq_list');
     exit;
+
 }
 if(isset($_POST['update'])){
-    modiffaq();
+    modiffaq($_POST['question'], $_POST['reponse'], $_POST['category_id'], $_POST['is_published'],$_POST['id'] );
     header('location:index.php?admin=faq_list');
     exit;
 }

@@ -31,7 +31,7 @@
         <tr>
             <th>#</th>
             <th>Subject</th>
-            <th>Question / Résumer</th>
+            <th>Publié</th>
             <th>Action</th>
         </tr>
         </thead>
@@ -44,10 +44,10 @@
                     <!-- htmlentities sert à écrire les balises html sans les interpréter -->
                     <th><?php echo htmlentities($forum['id']); ?></th>
                     <td><?php echo htmlentities($forum['name']); ?></td>
-                    <td><?php echo htmlentities($forum['content']); ?></td>
+                    <td><?php echo htmlentities($forum['is_published']); ?></td>
                     <td>
                         <a href="index.php?admin=forum_modif&forum_id=<?php echo $forum['id']; ?>&action=edit" class="btn btn-warning">Modifier</a>
-                        <a onclick="return confirm('Are you sure?')" href="index.php?admin=forum_modif&forum_id=<?php echo $forum['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
+                        <a onclick="return confirm('Are you sure?')" href="index.php?admin=forum_list&forum_id=<?php echo $forum['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
                     </td>
                 </tr>
 
