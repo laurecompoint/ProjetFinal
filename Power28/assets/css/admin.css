@@ -1,0 +1,25 @@
+header{
+    background-color: #55A3AF;
+}
+header a{
+    color: white;
+}
+a{
+    color: black;
+}
+.picture{
+    margin-top: -70px;
+
+}
+.bodyindex{
+    background-color: white;
+
+}
+body{
+    background-color: #FBF9F9;
+    margin: 0;
+    padding: 0;
+}
+.adlinlogo{
+    height: 100px;
+}
