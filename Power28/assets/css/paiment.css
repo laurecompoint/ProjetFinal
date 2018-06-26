@@ -1,0 +1,14 @@
+.body{
+    background-color: #FBF9F9;
+}
+.borderbuttonOne{
+    border: ridge 5px black;
+    width: 180px;
+}
+.stock{
+    height: 200px;
+    width: 40%;
+}
+.logiciel{
+    border-right: ridge 5px black;;
+}

@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Skia', sans-serif;
+}
+.body{
+    background-color: #FBF9F9;
+}
+#logo{
+    width: 200px;
+    height: 60px;
+}
+.color{
+    background-color: #2E7293;
+}
+.NavColor{
+    background-color: #55A3AF;
+    color: white;
+}
+.NavColor a{
+    color: white;
+}
+.borderbutton a{
+    color: black;
+}
+.borderbutton a:hover{
+    text-decoration: none;
+}
+.fonctionlogciel{
+    background-color: #2C7193;
+}
+.borderbuttonTwo{
+    border: ridge 5px black;
+    width: 600px;
+    margin-top: 40px;
+    background-color: white;
+}
+.footer{
+    background-color: #55A3AF;
+    padding-bottom: 10px;
+    padding-top: 3px;
+}
+.picture{
+    height: 100px;
+    width: 120px;
+    margin-left: 20px;
+}
+a{
+    color: black;
+}
+.fonctionOne{
+    height: 400px;
+    width: 80%;
+}
+.fonctionTwo{
+    border-right: ridge 5px black;
+}
+.pictureTwo{
+    border: ridge 3px black;
+    height: 400px;
+}
+.pictureThree{
+    border: ridge 3px black;
+    height: 400px;
+}
+.button{
+    background-color: #55A3AF;
+    border-color: #55A3AF;
+}
+.button a:hover{
+    text-decoration: #88bfff;
+}
+.card{
+    background-color: #FBF9F9;
+}
+.block{
+    height: 200px;
+    margin-left: -90px;
+}
+.arrow{
+    margin-right: 0px;
+}
+.title{
+    margin-left: 40px;
+}
+@media(max-width: 425px){
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+    .borderbuttonTwo{
+        width: 300px;
+        margin-bottom: 90px;
+        margin-top: 60px;
+    }
+    .fonction{
+        margin-top: 20px;
+    }
+    .fonctionTwo{
+        border-right: none;
+        border-bottom: ridge 5px black;
+    }
+    .title{
+        margin-left: 0;
+    }
+    #catalogue{
+        margin-top: 500px;
+    }
+    .text{
+        margin-left: 10px;
+        font-size: 25px;
+        height: 500px;
+    }
+    .buttoncollapsed{
+        margin-top: 60px;
+    }
+    #categoriemargine{
+        margin-top: 190px;
+    }
+    #stock{
+        margin-top: 100px;
+    }
+    #transactiontext{
+        margin-top: 200px;
+    }
+    .stock{
+        margin-top: 100px;
+    }
+    #fabricant{
+        margin-top: 100px;
+    }
+    .fabricantstext{
+        margin-top: 200px;
+    }
+    .fourniseursimage{
+        margin-top: 100px;
+    }
+    .fourniseurstext{
+        margin-top: 150px;
+    }
+    .commandesimage{
+        margin-top: 100px;
+    }
+    .lieuxtext{
+        margin-top: 200px;
+    }
+    .imagehistorique{
+        margin-top: 50px;
+    }
+    .utilisateurtext{
+        margin-top: 160px;
+    }
+    .parametretext{
+        margin-top: 40px;
+    }
+    .picture{
+        margin-left: 0px;
+    }
+    #catalogue{
+        margin-top: -5px;
+    }
+
+
+}
+@media(max-width: 768px){
+    .picture{
+        margin-left: 0px;
+    }
+    .fonctionOne{
+        height: 200px;
+        width: 80%;
+    }
+}
