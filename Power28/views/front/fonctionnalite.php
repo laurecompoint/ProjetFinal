@@ -1,7 +1,7 @@
 
       <head>
-          <link rel="stylesheet" href="assets/css/fonctionnalites.css">
-          <title>Power 28 : Fonctionnaliées</title>
+          <link rel="stylesheet" href="assets/css/fonctionnalite.css">
+          <title>Power 28 : Fonctionnaliés</title>
       </head>
 
       <body class="body">
@@ -11,7 +11,7 @@
     <div class="fonction d-flex flex-column">
 
         <div class="borderbutton mt-4 container-fluid ml-3">
-            <h2>Les Fonctionnalitées du logiciel</h2>
+            <h2>Les Fonctionnalités du logiciel</h2>
         </div>
 
         <div class="color row d-flex justify-content-around text-white">
@@ -25,7 +25,7 @@
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/user.png" alt="logofonction" class="picture" />
-                    <a href="#utilisateurs"><h6 class="mr-5 text-white">Utilisateur</h6></a>
+                    <a href="#utilisateurs"><h6 class="mr-5 text-white">Utilisateurs</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fonctionnalitesix.png" alt="logofonction" class="picture" />
@@ -63,7 +63,7 @@
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
                     <img src="assets/img/fourniseur.png" alt="logofonction" class="picture" />
-                    <a href="#fourniseurs"><h6 class="mr-4 text-white">Fourniseurs</h6></a>
+                    <a href="#fourniseurs"><h6 class="mr-4 text-white">Fournisseurs</h6></a>
                 </div>
             </div>
 
@@ -94,13 +94,10 @@
 
               </div>
 
-              <div class="text bg-white block col-md-6 text-center">
-                  <p class="mt-4 ml-3">Accueil et menu simplifié pour une navigation plus rapide.</p>
-                  <p class="ml-3">L’accuiel du logiciel va permettre au utililsateur d’acceder rappidement
+              <div class="text bg-white block col-md-6 text-center d-flex align-items-center">
+                  <p class="mt-4 ml-3">Accueil et menu simplifié pour une navigation plus rapide.<br>
+                      Accueil du logiciel va permettre au utililsateur d’acceder rappidement
                       a leur produits et a leur commandes.
-                  </p>
-                  <p class="ml-3"> La navigation comprend plusieur onglet : les catatlogue produits, les catégories,
-                      les transactions de stock, les commandes, les fabricants, fournisseurs...
                   </p>
 
               </div>
@@ -164,8 +161,7 @@
                 <p>Chaque produit du catalogue est lié à un ou plusieurs fournisseurs
                     grâce aux références fournisseurs.
                     Elles sont utiles à la mémorisation des informations financières de chaque produit. 
-                </p>
-                <p>
+
                     Ces références fournisseurs sont également utilisées dans les commandes pour
                     accélérer votre processus de
                     commande et connaître le montant de votre commande avant envoi au fournisseur.
@@ -208,7 +204,7 @@
                 <img src="assets/img/imgfonction/catalogue7.png" alt="fonction1" class="fonctionOne">
             </div>
 
-            <div class="bg-white block col-md-6 text-center d-flex align-items-center">
+            <div class="bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
                 <p>Ajoutez facilement votre produit dans une des catégories créée préalablement.</p>
 
             </div>
@@ -219,7 +215,7 @@
                 <img src="assets/img/imgfonction/catalogue8.png" alt="fonction1" class="fonctionOne">
             </div>
 
-            <div class="bg-white block col-md-6 text-center d-flex align-items-center">
+            <div class="bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
                 <p>Rattachez rapidement votre produit à un fabricant.</p>
 
             </div>
@@ -322,7 +318,7 @@
               <img src="assets/img/imgfonction/transaction2.png" alt="fonction1" class="fonctionOne stock">
           </div>
 
-          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
               Chaque produit dans votre stock peut être rattaché à un lieu préalablement créé.
 
           </div>
@@ -336,7 +332,7 @@
               <img src="assets/img/imgfonction/fabricants1.png" alt="fonction1" class="fonctionOne">
           </div>
 
-          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
               Ajoutez tous les fabricants de vos produits en stock à votre base de donnée !
 
           </div>
@@ -356,7 +352,7 @@
           </div>
       </div>
 
-      <h3 id="fourniseurs" class="page mt-5 title container text-left">Fourniseurs</h3>
+      <h3 id="fourniseurs" class="page mt-5 title container text-left">Fournisseurs</h3>
 
       <div id="stock" class="row d-flex justify-content-center">
 
@@ -443,9 +439,9 @@
                     Vous pouvez, à partir de cet écran, ajouter vos produits à votre bon de commande en utilisant
                     les références fournisseurs, elles seront utiles pour la maîtrise du
                     coût de vos commandes ainsi que la valorisation de votre stock.
-                </p>
 
-                <p>Consultez le détail de chaque produit ajouté à votre bon de commande.
+
+                    Consultez le détail de chaque produit ajouté à votre bon de commande.
                 </p>
 
             </div>
@@ -485,7 +481,7 @@
                 <img src="assets/img/imgfonction/commande7.png" alt="fonction1" class="fonctionOne">
             </div>
 
-            <div class="bg-white block col-md-6 text-center d-flex align-items-center">
+            <div class="bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
                 <p>Assistant de réception des commandes, en mode pas à pas, visuel n°1.
                 </p>
             </div>
@@ -496,7 +492,7 @@
                 <img src="assets/img/imgfonction/commande8.png" alt="fonction1" class="fonctionOne">
             </div>
 
-            <div class="bg-white block col-md-6 text-center d-flex align-items-center">
+            <div class="bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
                 <p>Assistant de réception des commandes, en mode pas à pas, visuel n°2.
                 </p>
             </div>
@@ -523,8 +519,7 @@
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
                 <p>Une fois vos produits reçus, imprimez toutes les étiquettes produit contenant l
                     es codes-barres (QR code) utiles à la gestion de stock. 
-                </p>
-                <p>
+
                     Nous avons sélectionné une taille universelle pour faciliter l'impression de vos étiquettes produit.
                 </p>
 
@@ -540,8 +535,7 @@
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
                 <p>Afin de suivre au plus près l'évolution de vos bons de commande, nous
                     avons implémenté un système d'historique puissant dans Power28.
-                </p>
-                <p>
+
                     Vous pourrez consulter toutes les entrées de l'historique directement à partir de vos commandes.
                 </p>
 
@@ -555,10 +549,10 @@
       <div id="stock" class="row d-flex justify-content-center">
 
           <div class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/lieux1.png" alt="fonction1" class="fonctionOne">
+              <img src="assets/img/imgfonction/lieu1.png" alt="fonction1" class="fonctionOne">
           </div>
 
-          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
               Gérez vos lieux directement dans Power28 pour optimiser les emplacements de vos entrepôts.
 
           </div>
@@ -567,7 +561,7 @@
       <div class="row d-flex justify-content-center mt-5">
 
           <div  class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/lieux2.png" alt="fonction1" class="fonctionOne stock">
+              <img src="assets/img/imgfonction/lieu2.png" alt="fonction1" class="fonctionOne stock">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -599,7 +593,7 @@
               <img src="assets/img/imgfonction/utilisateurs1.png" alt="fonction1" class="fonctionOne">
           </div>
 
-          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
+          <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
               Gérez tous les collaborateurs pouvant utiliser les fonctionnalités de Power28.
 
           </div>

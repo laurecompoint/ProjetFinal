@@ -11,7 +11,8 @@ function admindelate($category_id)
 {
     $db = dbConnect();
     $query = $db->prepare('DELETE FROM category WHERE id = ?');
-    $query->execute ($category_id);
+    $result = $query->execute($category_id);
+    return $result;
 
 }
 
@@ -23,9 +24,17 @@ function insertcategory($name)
     $insert->execute(array(
         $name,
     ));
+    if($insert){
+        header('location:index.php?admin=category_list');
+        exit;
+    }
+    else{
+        $message = "Impossible d'enregistrer la nouvelle categories...";
+    }
+    return $message;
 
 }
-function modifcategory($name, $id){
+function updatecategory($name, $id){
 
     $db = dbConnect();
 
@@ -40,6 +49,14 @@ function modifcategory($name, $id){
             'id' => $id
         ]
     );
+    if($query){
+        header('location:index.php?admin=category_list');
+        exit;
+    }
+    else{
+        $message = "Impossible de modifier la nouvelle categories...";
+    }
+    return $message;
 
 }
 function categoryId()

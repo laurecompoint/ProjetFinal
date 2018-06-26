@@ -1,4 +1,4 @@
-
+<?php require 'head_assets.php'; ?>
 <?php
 	//nombre d'enregistrements de la table user
 	$nbUsers = $db->query("SELECT COUNT(*) FROM user")->fetchColumn();
@@ -11,7 +11,7 @@
     $nbCommentaire = $db->query("SELECT COUNT(*) FROM commentaire")->fetchColumn();
 ?>
 
-    <div class="row d-flex justify-content-around">
+    <div class="row d-flex justify-content-around bg-white">
 
 		<a href="index.php?admin=user_list">Gestion des utilisateurs (<?php echo $nbUsers; ?>)</a>
 		<a href="index.php?admin=category_list">Gestion des catégories (<?php echo $nbCategories; ?>)</a>

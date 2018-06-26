@@ -20,7 +20,7 @@
         <a class="btn btn-primary" href="index.php?admin=faq_modif">Ajouter FAQ</a>
     </div>
 
-    <?php if(isset($message)): //si un message a été généré plus haut, l'afficher ?>
+    <?php if(isset($message)): ?>
         <div class="bg-success text-white p-2 mb-4">
             <?php echo $message; ?>
         </div>
@@ -44,7 +44,7 @@
                     <th><?php echo htmlentities($faq['id']); ?></th>
                     <td><?php echo htmlentities($faq['question']); ?></td>
                     <td>
-                        <a href="index.php?admin=faq_modif&faq_id=<?php echo $faq['id']; ?>&action=edit" class="btn btn-warning">Modifier</a>
+                        <a href="index.php?admin=faq_modif&faq_id=<?php echo $faq['id']; ?>&action=edit" class="btn btn-secondary">Modifier</a>
                         <a onclick="return confirm('Are you sure?')" href="index.php?admin=faq_list&faq_id=<?php echo $faq['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
                     </td>
                 </tr>

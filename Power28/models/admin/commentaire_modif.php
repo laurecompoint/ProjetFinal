@@ -25,9 +25,16 @@ function insertcommentaire($content, $forum_id, $is_published)
         $forum_id,
         $is_published,
     ));
-    $subject ->closeCursor();
+    if($subject){
+        header('location:index.php?admin=commentaire_list');
+        exit;
+    }
+    else{
+        $message = "Impossible d'enregistrer le commentaire...";
+    }
+    return $message;
 }
-function modifcommentaire($content, $is_published, $forum_id, $id){
+function updatecommentaire($content, $is_published, $forum_id, $id){
     $db = dbConnect();
 
     $query = $db->prepare('UPDATE commentaire SET
@@ -45,6 +52,14 @@ function modifcommentaire($content, $is_published, $forum_id, $id){
             'id' => $id
         ]
     );
+    if($query){
+        header('location:index.php?admin=commentaire_list');
+        exit;
+    }
+    else{
+        $message = "Impossible de modifier le commentaire...";
+    }
+    return $message;
 }
 function commentaireId()
 {

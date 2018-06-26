@@ -20,10 +20,10 @@
 
         <div class="text-right mt-5">
             <?php if(isset($category)): ?>
-                <input class="btn btn-success" type="submit" name="update" value="Mettre à jour" />
+                <input class="btn button text-white" type="submit" name="update" value="Mettre à jour" />
 
             <?php else: ?>
-                <input class="btn btn-success" type="submit" name="save" value="Enregistrer" />
+                <input class="btn button text-white" type="submit" name="save" value="Enregistrer" />
             <?php endif; ?>
         </div>
 

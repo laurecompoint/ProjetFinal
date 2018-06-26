@@ -12,6 +12,9 @@ footer{
     left: 0;
     padding: 1rem;
 }
+.button{
+    background-color: #55A3AF;
+}
 @media(max-width: 425px){
     .inputcontact{
         width: 400px;
@@ -31,10 +34,17 @@ footer{
         margin-left: -100px;
     }
     label p{
-        font-size: 40px;
+        font-size: 20px;
     }
     .contact h4{
-        font-size: 60px;
+        font-size: 30px;
+
+    }
+    footer{
+        position: absolute;
+        right: 0;
+        bottom: 10;
+        left: 0;
 
     }
 }

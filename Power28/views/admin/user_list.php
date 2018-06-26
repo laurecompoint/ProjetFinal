@@ -48,7 +48,7 @@
                     <td><?php echo htmlentities($user['email']); ?></td>
                     <td><?php echo htmlentities($user['is_admin']); ?></td>
                     <td>
-                        <a href="index.php?admin=user_modif&user_id=<?php echo $user['id']; ?>&action=edit" class="btn btn-warning">Modifier</a>
+                        <a href="index.php?admin=user_modif&user_id=<?php echo $user['id']; ?>&action=edit" class="btn btn-secondary">Modifier</a>
                         <a onclick="return confirm('Are you sure?')" href="index.php?admin=user_list&user_id=<?php echo $user['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
                     </td>
                 </tr>

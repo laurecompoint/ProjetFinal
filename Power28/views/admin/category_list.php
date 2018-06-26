@@ -44,7 +44,7 @@
 								<td><?php echo htmlentities($category['name']); ?></td>
 
 								<td>
-									<a href="index.php?admin=category_modif&category_id=<?php echo $category['id']; ?>&action=edit" class="btn btn-warning">Modifier</a>
+									<a href="index.php?admin=category_modif&category_id=<?php echo $category['id']; ?>&action=edit" class="btn btn-secondary">Modifier</a>
 									<a onclick="return confirm('Are you sure?')" href="index.php?admin=category_list&category_id=<?php echo $category['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
 								</td>
 							</tr>

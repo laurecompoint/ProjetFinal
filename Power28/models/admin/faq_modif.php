@@ -11,7 +11,16 @@ function faqdelate($faq_id)
 {
     $db = dbConnect();
     $query = $db->prepare('DELETE FROM faq WHERE id = ?');
-    $query->execute ([ $faq_id ]);
+    $result = $query->execute ([ $faq_id ]
+    );
+
+    if($result){
+        $message = "supression";
+    }
+    else{
+        $message = "erreur";
+    }
+    return $message;
 
 }
 function insertfaq($question, $reponse,  $category_id, $is_published)
@@ -26,19 +35,25 @@ function insertfaq($question, $reponse,  $category_id, $is_published)
         $category_id,
         $is_published,
     ));
-    $faq ->closeCursor();
+    if($faq){
+        require_once('index.php?page=forum&forum_id=1');
+    }
+    else{
+        $message = "Impossible d'enregistrer le nouveau commentaire...";
+    }
+    return $message;
 }
-function modiffaq($question, $reponse, $category_id, $id){
+function udaptefaq($question, $reponse, $category_id, $id){
     $db = dbConnect();
 
-    $query = $db->prepare('UPDATE faq SET
+    $faqudapte = $db->prepare('UPDATE faq SET
 		question = :question,
 		reponse = :reponse,
 		category_id = :category_id
 		WHERE id = :id'
     );
 
-    $query->execute(
+    $faqudapte->execute(
         [
             'question' =>  $question,
             'reponse' => $reponse,
@@ -46,6 +61,14 @@ function modiffaq($question, $reponse, $category_id, $id){
             'id' => $id,
         ]
     );
+    if($faqudapte){
+        header('location:index.php?admin=faq_list');
+        exit;
+    }
+    else{
+        $message = "Impossible d'enregistrer lA FAQ...";
+    }
+    return $message;
 }
 function faqId()
 {

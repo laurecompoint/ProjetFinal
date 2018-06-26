@@ -46,10 +46,10 @@
         <div class="text-right mt-5">
             <!-- Si $category existe, on affiche un lien de mise à jour -->
             <?php if(isset($commentaire)): ?>
-                <input class="btn btn-success" type="submit" name="update" value="Mettre à jour" />
+                <input class="btn button text-white" type="submit" name="update" value="Mettre à jour" />
                 <!-- Sinon on afficher un lien d'enregistrement d'une nouvelle catégorie -->
             <?php else: ?>
-                <input class="btn btn-success" type="submit" name="save" value="Enregistrer" />
+                <input class="btn button text-white" type="submit" name="save" value="Enregistrer" />
             <?php endif; ?>
         </div>
 

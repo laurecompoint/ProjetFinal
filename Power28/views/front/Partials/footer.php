@@ -1,25 +1,29 @@
 
 <link rel="stylesheet" href="assets/css/footernav.css">
 <footer class="mt-1 footer">
-  <div class="row ml-1 d-flex justify-content-between align-content-center">
+
+  <div class="row d-flex justify-content-around align-content-center container-fluid">
+
+
       <div class="col-md-6 text-white link mt-4">
-          <p>Power 28 / <a href="index.php?admin"> Adminsistration</p></a>
-          <p>Tous droits reserver copread right 2018 </p>
+          <p>Power 28 / <a href="index.php?admin"> Administration</p></a>
+          <p>Tous droits reserver copyright 2018 </p>
       </div>
-      <div class="col-md-6 text-white mt-4">
+      <div class="col-md-6 text-white mt-4 link text-right">
 
-        <div class="margine d-flex flex-column">
-            <p>Adresse de la societe : Toulouse & Paris / <a href="index.php?page=mentionlegal">Mention legal</a></p>
-            <div class="row d-flex justify-content-around">
-                <p>Tous nos réseaux sociaux : </p>
-                <i class="fab fa-facebook" style="font-size:36px;"></i>
-                <i class="fab fa-facebook-messenger" style="font-size:36px;"></i>
-                <i class="fab fa-instagram" style="font-size:36px;"></i>
-                <i class="fab fa-linkedin" style="font-size:36px;"></i>
-                <i class="fab fa-twitter-square" style="font-size:36px;"></i>
+            <p class="address">Adresse de la societe : Toulouse & Paris / <a href="index.php?page=mentionlegal">Mention legal</a></p>
+            <div class="row logosocio d-flex justify-content-end">
 
+                <p class="margine">Tous nos réseaux sociaux : </p>
+                <div class="logomargine">
+                    <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook logosize"></i></a>
+                    <a href="https://www.messenger.com/i"><i class="fab fa-facebook-messenger logosize" ></i></a>
+                    <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram logosize" ></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin logosize" ></i></a>
+                    <a href="https://twitter.com/?lang=fr"> <i class="fab fa-twitter-square logosize" ></i></a>
+                </div>
             </div>
-        </div>
+
       </div>
   </div>
 </footer>

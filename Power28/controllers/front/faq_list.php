@@ -1,7 +1,7 @@
 
 <?php
 
-require_once ('models/faq_list.php');
+require_once ('models/front/faq_list.php');
 
 $categories = getCategories();
 $faqs = getFaq();

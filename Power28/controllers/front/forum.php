@@ -1,8 +1,8 @@
 <?php
+require_once('models/front/forum.php');
+require_once('models/front/category.php');
 
-require_once('models/forum.php');
-require_once('models/category.php');
-$commentaire = getCommentaire();
+$commentaire = getCommentaire($_GET['forum_id']);
 
 if(isset($_GET['forum_id'])){
 
@@ -15,10 +15,7 @@ if(isset($_GET['forum_id'])){
 
     $categories = getCategories();
 
-
     require_once('views/front/forum.php');
-
-
 }
 
 if(isset($_POST['save']))
@@ -33,19 +30,9 @@ if(isset($_POST['save']))
     else
     {
         commentaire($_POST['author'], $_POST['content'], $_POST['forum_id'],  $_POST['is_published'], $_POST['created_at']);
+        echo '<meta http-equiv="refresh" content="0;URL=index.php?page=forum_list&category_id=1">';
 
     }
 }
-
-?>
-<?php
-
-
-
-
-
-
-
-
-
+require_once ('views/front/forum.php');
 ?>

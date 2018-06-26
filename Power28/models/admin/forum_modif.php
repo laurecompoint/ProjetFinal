@@ -27,9 +27,16 @@ function insertforum($name, $content,  $category_id, $is_published)
         $category_id,
         $is_published,
     ));
-    $forum ->closeCursor();
+    if($forum){
+        header('location:index.php?admin=forum_list');
+        exit;
+    }
+    else{
+        $message = "Impossible d'enregistrer le forum...";
+    }
+    return $message;
 }
-function modifforum($name, $content, $category, $is_published, $id){
+function updateforum($name, $content, $category, $is_published, $id){
 
     $db = dbConnect();
 
@@ -50,6 +57,14 @@ function modifforum($name, $content, $category, $is_published, $id){
             'id' => $id,
         ]
     );
+    if($query){
+        header('location:index.php?admin=formu_list');
+        exit;
+    }
+    else{
+        $message = "Impossible de modifier le forum...";
+    }
+    return $message;
 }
 function forumId()
 {

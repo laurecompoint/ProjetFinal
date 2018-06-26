@@ -1,5 +1,5 @@
 <?php require ('head_assets.php');?>
-
+<html>
 <link rel="stylesheet" href="assets/css/footernav.css">
 
   <nav class="navbar navbar-expand-lg NavColor">
@@ -25,16 +25,20 @@
                       <a class="nav-link mt-2" href="index.php?page=entreprise">Entreprise</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link mt-2" href="index.php?page=fonctionnalite">Fonctionnalitées</a>
+                      <a class="nav-link mt-2" href="index.php?page=fonctionnalite">Fonctionnalités</a>
                   </li>
                   <li class="nav-item mt-2">
                       <a class="nav-link" href="index.php?page=contact">Contact</a>
                   </li>
                   <?php if(isset($_SESSION['user'])) : ?>
                       <li class="nav-item dropdown">
+
                           <a class="nav-link" data-toggle="dropdown" href="#!" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-users" style="font-size:36px;"></i></a>
                           <div class="dropdown-menu dropdown-menu-right NavColor">
-                              <a href="index.php?page=userprofil&user_id=<?php echo  $_SESSION['user']; ?>&action=edit">Vos Information</a>
+
+                              <p class="text-center">Hello <?php echo $_SESSION['user']; ?></p>
+
+                              <a class="text-center d-flex justify-content-center mb-4" href="index.php?page=profile">Vos Informations</a>
 
                               <p><a class="m-auto d-block btn btn-danger col-9 text-center text-white" href="index.php?logout">Déconnexion</a></p>
                           </div>
@@ -42,7 +46,7 @@
 
                   <?php else: ?>
                   <li class="nav-item mt-2">
-                      <a class="nav-link" href="index.php?page=user">Connection/Inscription</a>
+                      <a class="nav-link" href="index.php?page=login">Connexion/Inscription</a>
                   </li>
                   <?php endif; ?>
               </ul>
@@ -50,6 +54,7 @@
 
       </div>
   </nav>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

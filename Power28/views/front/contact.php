@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href="assets/css/contacts.css">
     <title>Power 28 : Contact US</title>
@@ -22,10 +23,10 @@
     <div class="inputcontact form-group col-sm-8 offset-sm-2">
         <label for="email"><p>Message</p> </b></label>
         <input class="form-control" value="" type="text" placeholder="message" name="message" id="email" />
-        <input class="btn btn-primary mt-3" type="submit" name="envoyer" value="Envoyer" />
+        <input class="btn button mt-3" type="submit" name="envoyer" value="Envoyer" />
     </div>
     </form>
 </div>
-
+</html>
 
 <?php require 'Partials/footer.php';?>

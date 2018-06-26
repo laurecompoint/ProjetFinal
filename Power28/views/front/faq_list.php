@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/forums.css">
     <title>Power 28 : FAQ</title>
 </head>
 <body class="body">

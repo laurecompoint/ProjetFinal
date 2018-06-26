@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html>
 <head>
 
     <link rel="stylesheet" href="assets/css/contact.css">
@@ -6,11 +7,7 @@
 
 </head>
 <?php require ('Partials/nav.php');?>
-<head>
 
-    <?php require('partials/nav.php'); ?>
-
-</head>
 
 
 <div class="contact d-flex justify-content-center">
@@ -61,5 +58,38 @@
     sit amet blandit orci egestas et.
     Proin nibh massa, rutrum in nisi in, posuere semper metus.
 </p>
+    <p>
+        Duis ipsum augue, placerat nec semper sed, consectetur
+        dapibus nisi. Sed commodo eros vitae tortor pretium, quis
+        sollicitudin enim ullamcorper. Sed vel egestas velit, ut congue magna.
+        Aliquam et rutrum augue. Integer sagittis sem volutpat vehicula placerat.
+        Fusce ultrices leo enim. Phasellus et metus nec sem congue sollicitudin.
+        Cras tincidunt nulla urna, sit amet mollis mauris gravida id.
+        Nulla pulvinar eros et commodo mattis.
+
+
+    </p>
+    <p>
+        Duis ipsum augue, placerat nec semper sed, consectetur
+        dapibus nisi. Sed commodo eros vitae tortor pretium, quis
+        sollicitudin enim ullamcorper. Sed vel egestas velit, ut congue magna.
+        Aliquam et rutrum augue. Integer sagittis sem volutpat vehicula placerat.
+        Fusce ultrices leo enim. Phasellus et metus nec sem congue sollicitudin.
+        Cras tincidunt nulla urna, sit amet mollis mauris gravida id.
+        Nulla pulvinar eros et commodo mattis.
+
+    </p>
+    <p>
+        Duis ipsum augue, placerat nec semper sed, consectetur
+        dapibus nisi. Sed commodo eros vitae tortor pretium, quis
+        sollicitudin enim ullamcorper. Sed vel egestas velit, ut congue magna.
+        Aliquam et rutrum augue. Integer sagittis sem volutpat vehicula placerat.
+        Fusce ultrices leo enim. Phasellus et metus nec sem congue sollicitudin.
+        Cras tincidunt nulla urna, sit amet mollis mauris gravida id.
+        Nulla pulvinar eros et commodo mattis.
+
+
+    </p>
 </div>
 <?php require 'Partials/footer.php';?>
+</html>

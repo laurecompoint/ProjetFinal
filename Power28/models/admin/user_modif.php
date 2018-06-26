@@ -1,5 +1,4 @@
 <?php
-
 function adminuser()
 {
     $db = dbConnect();
@@ -30,8 +29,16 @@ function insertuser($firstname, $lastname, $is_admin, $email, $numerotel, $adres
             hash('md5', $password)
         ]
     );
+    if($query){
+        header('location:index.php?admin=user_list');
+        exit;
+    }
+    else{
+        $message = "Impossible d'enregistrer le nouveau utilisateur...";
+    }
+    return $message;
 }
-function modifuser($firstname, $lastname, $is_admin, $email, $numerotel, $adresse, $ville, $password, $id){
+function updateuser($firstname, $lastname, $is_admin, $email, $numerotel, $adresse, $ville, $password, $id){
 
     $db = dbConnect();
 
@@ -56,16 +63,24 @@ function modifuser($firstname, $lastname, $is_admin, $email, $numerotel, $adress
             'numerotel' => $numerotel,
             'adresse' => $adresse,
             'ville'   =>  $ville,
-            'password' => $password,
+            'password' => hash('md5',  $password),
             'id' => $id,
         ]
     );
+    if($query){
+        header('location:index.php?admin=user_list');
+        exit;
+    }
+    else{
+        $message = "Impossible de modifier les information de l'utilisateur...";
+    }
+    return $message;
 }
-function userId()
+function userId($user_id)
 {
     $db = dbConnect();
     $query = $db->prepare('SELECT * FROM user WHERE id = ?');
-    $query->execute(array($_GET['user_id']));
+    $query->execute(array($user_id));
     return $query->fetch();
 }
 

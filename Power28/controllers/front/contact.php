@@ -1,6 +1,6 @@
 <?php
 
-require_once('models/contact.php');
+require_once('models/front/contact.php');
 
 if(isset($_POST['envoyer']))
 {

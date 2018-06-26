@@ -6,10 +6,13 @@ body{
 }
 $background: #FBF9F9;
 $borderbutton: ridge 5px black;
-
+a:hover{
+  text-decoration: none;
+}
 .stock{
   height: 400px;
 }
+
 .logicielordi{
   height: 250px;
 }
@@ -59,9 +62,6 @@ $borderbutton: ridge 5px black;
   height: 100px;
   width: 120px;
 }
-.test{
-  margin: auto;
-}
 .link a{
   color: white;
 }
@@ -85,23 +85,24 @@ $borderbutton: ridge 5px black;
   margin-top: 150px;
 }
 @media(max-width: 425px){
-  #logo{
-    width: 100px;
-    height: 50px;
-  }
   .logiciel{
     margin-top: 30px;
-  }
-  .borderbuttonTwo{
-    width: 300px;
-    margin-bottom: 90px;
-    margin-top: 60px;
-  }
-  .mail{
-    border: none;
+    height: 100px;
   }
   .margine{
     margin-left: 0;
+  }
+  .logicielordi{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer{
+    margin-top: 900px;
+  }
+  .stock{
+    height: 250px;
   }
 
 
@@ -115,6 +116,15 @@ $borderbutton: ridge 5px black;
   .logiciel{
     margin-right: 10px;
   }
+  .logicielordi{
+    width: 60%;
+    height: 200px;
+  }
+  .forum{
+    width: 100%;
+    height: 40px;
+  }
+
 
 
 }

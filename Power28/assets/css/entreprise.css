@@ -6,11 +6,7 @@ body{
 .body{
     background-color: #FBF9F9;
 }
-.address{
-    height: 200px;
-    margin-top: -10px;
 
-}
 .presentation{
     height: 250px;
     width: 30%;
@@ -28,7 +24,24 @@ body{
 }
 @media(max-width: 425px){
     .compagny{
-        background-size: 690px;
-        height: 500px;
+        background-size: 190px;
+        height: 400px;
+    }
+    .presentation{
+        height: 250px;
+        width: 90%;
+        font-size: 10px;
+    }
+}
+@media(max-width: 768px){
+    .presentation{
+        height: 250px;
+        width: 90%;
+        font-size: 10px;
+        margin: auto;
+    }
+    .compagny{
+        background-size: 880px;
+        height: 400px;
     }
 }

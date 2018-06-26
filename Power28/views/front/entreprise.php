@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href="assets/css/entreprise.css">
     <title>Power 28 : Entreprise</title>
@@ -10,7 +11,7 @@
 
 
     <div class="bg-white presentation d-flex justify-content-center align-items-center flex-column text-justify text-center">
-        <h3 class="text-right">Presentation de notre entreprise</h3>
+        <h3 class="text-right text">Présentation de notre entreprise</h3>
         <p class="ml-2">Notre emtreprise se base principalement à Toulouse mais aussi à Paris pour nos clients
             les plus fidèles.
         </p>
@@ -20,7 +21,7 @@
 
     </div>
 
-
+    <div id="ToulouseMap"></div>
 
 </div>
 
@@ -69,7 +70,7 @@
 <div class="container-fluid mt-4 text-justify">
 
 <div class="row">
-    <div class="col-7">
+    <div class="col-md-7">
     <h5>Spécialisé dans l'hebergement</h5>
 
     <p>Nous sommes spécialisés dans l’hébergement de bases de données FileMaker depuis 2010.
@@ -81,7 +82,7 @@
         sur 2 sites distants afin d’éviter toute perte de données.
     </p>
     <p>
-        Coût, Qualité, Sécurité, Disponibilité  : Ce sont les 4 maîtres-mots de Power28 concernant l’hébergement
+        Coût, Qualité, Sécurité, Disponibilité  : Ce sont les 4 maîtres-mots de Power 28 concernant l’hébergement
         FileMaker et l’hébergement de vos bases de données d’entreprise.
         1 seul prix simple et accessible pour votre base de donnée.
     </p>
@@ -95,14 +96,14 @@
         - Frais d’installation : Inclus<br>
     </p>
     </div>
-    <div class="col-5">
+    <div class="col-md-5">
         <img src="assets/img/filemaker.jpg" alt="hebergement" class="col-10 rounded mx-auto d-block mt-5"/>
 
     </div>
 </div>
     <h5>Nôtre produit : Power 28 </h5>
 
-    <p>Pourquoi le nom de Power28 ?</p>
+    <p>Pourquoi le nom de Power 28 ?</p>
 
     <p>Power comme la puissance, notre souci a été d'améliorer la puissance de gestion de toutes les entreprises
         souhaitant affiner les processus de gestion de stock.
@@ -112,7 +113,7 @@
     </p>
 
 
-    <p class="text-justify mt-2">Power28 est un logiciel de gestion de stock multi-secteur.
+    <p class="text-justify mt-2">Power28 est un logiciel de gestion de stock multi-secteurs.
         Il permet de gérer et valoriser le stock d'une entreprise ainsi que réaliser
         un suivi des entrées et des sorties avec une granularité fine (avec de le détail de toutes les transactions).
     </p>
@@ -129,3 +130,6 @@
 
 <?php require 'Partials/footer.php';?>
 </body>
+</html>
+
+
