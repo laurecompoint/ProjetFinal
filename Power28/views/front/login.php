@@ -85,15 +85,19 @@
                         </div>
                         <div class="form-group col-sm-8 offset-sm-2">
                             <label for="bio">Numéro de télèphone</label>
-                            <textarea class="form-control" name="numerotel" id="bio" placeholder="Téléphone"></textarea>
+                            <textarea class="form-control" name="numerotel" id="telphone" placeholder="Téléphone"></textarea>
+                        </div>
+                        <div class="form-group col-sm-8 offset-sm-2">
+                            <label for="bio">Nom de la societe</label>
+                            <textarea class="form-control" name="entreprise" id="entreprise" placeholder="entreprise"></textarea>
                         </div>
                         <div class="form-group col-sm-8 offset-sm-2">
                             <label for="bio">Adresse</label>
-                            <textarea class="form-control" name="adresse" id="bio" placeholder="Adresse"></textarea>
+                            <textarea class="form-control" name="adresse" id=adresse placeholder="Adresse"></textarea>
                         </div>
                         <div class="form-group col-sm-8 offset-sm-2">
                             <label for="bio">Ville/code postale</label>
-                            <textarea class="form-control" name="ville" id="bio" placeholder="Ville / Code postale"></textarea>
+                            <textarea class="form-control" name="ville" id="ville" placeholder="Ville / Code postale"></textarea>
                         </div>
 
                         <div class="form-group col-sm-8 offset-sm-2">

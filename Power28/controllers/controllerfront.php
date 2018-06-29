@@ -21,10 +21,10 @@ if(isset($_GET['page'])){
     require_once('front/faq_list.php');
   }
   elseif($_GET['page'] == 'fonctionnalite'){
-    require_once('front/fonctionnalite.php');
+    require_once('views/front/fonctionnalite.php');
   }
   elseif($_GET['page'] == 'entreprise'){
-    require_once('front/entreprise.php');
+    require_once('views/front/entreprise.php');
   }
   elseif($_GET['page'] == 'contact'){
       require_once('front/contact.php');
@@ -35,6 +35,9 @@ if(isset($_GET['page'])){
   elseif($_GET['page'] == 'paiment'){
       require_once('front/paiment.php');
   }
+  elseif($_GET['page'] == 'error'){
+      require_once('views/front/error.php');
+  }
   else{
     require_once('front/index.php');
   }
@@ -42,4 +45,5 @@ if(isset($_GET['page'])){
 else{
   require_once('front/index.php');
 }
+
 ?>

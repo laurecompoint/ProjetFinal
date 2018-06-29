@@ -8,16 +8,18 @@
 <div class="navheader">
     <?php require ('Partials/nav.php');?>
 </div>
-<div class="header text-center mt-4">
+<div class="d-flex justify-content-center headercontainer col-12">
+<div class="header text-center">
 
-        <h2>Subject : <?php echo $forum['name']; ?></h2>
+        <h2 class="mt-4">Subject : <?php echo $forum['name']; ?></h2>
 
         <p>Question : <?php echo $forum['content']; ?></p>
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
         </div>
 </div>
-<div class="bg-white col-7 m-auto">
+</div>
+<div class="bg-white m-auto widthblock">
 
         <div class="d-flex flex-column container-fluid mt-5">
 

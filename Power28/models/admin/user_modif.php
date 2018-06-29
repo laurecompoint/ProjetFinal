@@ -13,14 +13,15 @@ function userdelate($user_id)
     $query->execute ([ $user_id ]);
 
 }
-function insertuser($firstname, $lastname, $is_admin, $email, $numerotel, $adresse, $ville, $password)
+function insertuser($firstname, $lastname, $entreprise, $is_admin, $email, $numerotel, $adresse, $ville, $password)
 {
     $db = dbConnect();
-    $query = $db->prepare('INSERT INTO user (firstname, lastname, is_admin, email, numerotel, adresse, ville, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+    $query = $db->prepare('INSERT INTO user (firstname, lastname, entreprise, is_admin, email, numerotel, adresse, ville, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
     $query->execute(
         [
             $firstname,
             $lastname,
+            $entreprise,
             $is_admin,
             $email,
             $numerotel,
@@ -38,7 +39,7 @@ function insertuser($firstname, $lastname, $is_admin, $email, $numerotel, $adres
     }
     return $message;
 }
-function updateuser($firstname, $lastname, $is_admin, $email, $numerotel, $adresse, $ville, $password, $id){
+function updateuser($firstname, $lastname, $is_admin, $entreprise, $email, $numerotel, $adresse, $ville, $password, $id){
 
     $db = dbConnect();
 
@@ -46,6 +47,7 @@ function updateuser($firstname, $lastname, $is_admin, $email, $numerotel, $adres
 		firstname = :firstname,
 		lastname = :lastname,
 		is_admin = :is_admin,
+		entreprise = :entreprise,
 		email = :email,
 		numerotel = :numerotel,
 		adresse = :adresse,		
@@ -59,6 +61,7 @@ function updateuser($firstname, $lastname, $is_admin, $email, $numerotel, $adres
             'firstname' =>  $firstname,
             'lastname' => $lastname,
             'is_admin' => $is_admin,
+            'entreprise' => $entreprise,
             'email' => $email,
             'numerotel' => $numerotel,
             'adresse' => $adresse,

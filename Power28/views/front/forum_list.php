@@ -9,14 +9,12 @@
 <body class="body">
 <?php require ('Partials/nav.php');?>
 <div class="subjectforum d-flex flex-column justify-content-center">
-    <?php require 'subject.php'; ?>
+    <?php require 'category.php'; ?>
 </div>
 <?php if(!empty($forums)): ?>
 
                 <div class="subject col-md-9 mt-5">
-
-                    <h3>Nos sujects : <?php if(isset($currentCategory)): ?><?php echo $currentCategory['name']; ?><?php endif; ?></h3>
-
+                    <h3>Nos sujects : <?php if(isset($currentCategory)): ?><?php echo $currentCategory['name']; ?><?php else : ?><?php endif; ?> </h3>
                 </div>
 
                 <div class="row col-md-12 mt-5 d-flex justify-content-between">
@@ -69,7 +67,7 @@
                             <input type="hidden" name="category_id" value="<?php echo $topic['category_id']; ?>" placeholder="forum_id" />
                             <input type="hidden" name="created_at" placeholder="created_at" />
                             <input type="hidden" name="is_published" value="1" placeholder="is_published" />
-                            <input class="btn button mt-3" type="submit" name="savesubject" value="Valider" />
+                            <input class="btn button mt-3 text-white" type="submit" name="savesubject" value="Valider" />
                         </div>
                     </form>
 
@@ -83,40 +81,8 @@
 
 <?php else: ?>
 
-                <div class="d-flex flex-column col-12">
+    <p class="ml-3">Aucun suject dans cette catégorie de forum...</p>
 
-                    <div class=" mt-5 ">
-                        <p class="ml-3">Aucun suject dans cette catégorie de forum...</p>
-
-                    </div>
-
-                    <div class="mt-5">
-
-                        <h2>Ajouter un sujet</h2>
-
-                        <?php if(isset($_SESSION['user'])) : ?>
-
-                            <form action="index.php?page=forum_list&category_id=<?php echo $topic['category_id'] ?>" method="post">
-                                <div class="form-group col-12 mt-4">
-                                    <input type="hidden" name="author" value="<?php echo $_SESSION['user']; ?>" class="form-control" id="formGroupExampleInput2" placeholder="Your name">
-                                    <label>Titre de vôtre suject</label>
-                                    <input type="text" name="name" class="form-control" id="formGroupExampleInput2" placeholder="Title Subject"> <br>
-                                    <label>Contenue de vôtre suject</label>
-                                    <input type="text" name="content" class="form-control" id="formGroupExampleInput2" placeholder="Contenue">
-                                    <input type="hidden" name="category_id" value="<?php echo $topic['category_id']; ?>" placeholder="forum_id" />
-                                    <input type="hidden" name="created_at" placeholder="created_at" />
-                                    <input type="hidden" name="is_published" value="1" placeholder="is_published" />
-                                    <input class="btn button mt-3" type="submit" name="savesubject" value="Valider" />
-                                </div>
-                            </form>
-
-                        <?php else: ?>
-                        <?php endif; ?>
-
-                    </div>
-
-
-                </div>
 
     <?php endif; ?>
 

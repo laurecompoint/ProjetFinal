@@ -97,7 +97,7 @@
     </p>
     </div>
     <div class="col-md-5">
-        <img src="assets/img/filemaker.jpg" alt="hebergement" class="col-10 rounded mx-auto d-block mt-5"/>
+        <img src="assets/img/filemaker.png" alt="hebergement" class="col-7 rounded mx-auto d-block mt-5"/>
 
     </div>
 </div>

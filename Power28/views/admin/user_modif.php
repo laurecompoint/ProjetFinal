@@ -24,6 +24,10 @@
             <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['lastname']?>"<?php endif; ?> type="text" placeholder="lastname" name="lastname" id="lastname" />
         </div>
         <div class="form-group">
+            <label for="name">Entreprise:</label><br>
+            <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['entreprise']?>"<?php endif; ?> type="text" placeholder="entreprise" name="entreprise" id="entreprise" />
+        </div>
+        <div class="form-group">
             <label for="is_admin"> Admin ?</label>
             <select class="form-control" name="is_admin" id="is_admin">
                 <option value="0" <?php if(isset($user) && $user['is_admin'] == 0): ?>selected<?php endif; ?>>Non</option>

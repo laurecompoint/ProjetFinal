@@ -63,7 +63,7 @@ function User($firstname, $lastname, $numerotel, $adresse, $ville, $email, $user
 
 
             $query = $db->prepare('SELECT * FROM user WHERE id = ?');
-            $query->execute(array($_SESSION['id']));
+            $query->execute(array($_SESSION['user_id']));
             $query->fetch();
             return $query;
 

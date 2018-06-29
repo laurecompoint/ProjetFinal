@@ -5,12 +5,16 @@ require_once ('models/front/category.php');
 
 $categories = getCategories();
 
-$forums = getForums($_GET['category_id']);
-
 if(isset($_GET['category_id'])){
 
     $currentCategory = getCategory($_GET['category_id']);
-
+    if($currentCategory) {
+    $forums = getForums($_GET['category_id']);
+  }
+}
+else{
+    header('location:index.php?page=error');
+    exit;
 }
 
 if(isset($_POST['savesubject']))

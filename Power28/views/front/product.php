@@ -15,7 +15,7 @@
 
         <h2 class="mt-5">Tarif de Power 28</h2>
 
-        <p class="mt-2">Logiciel vendu 1200</p>€ H.T.
+        <p class="mt-2">Logiciel vendu 1200€ H.T.
             (Licence FileMaker Pro non incluse, voir : http://store.filemaker.com/)<br>
             - Licence unique par site, par entreprise.<br>
             - Nombre d'utilisateurs illimités.<br>

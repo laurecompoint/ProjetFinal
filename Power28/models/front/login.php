@@ -13,7 +13,7 @@ function login($email, $password){
         if($user){
             $_SESSION['is_admin'] = $user['is_admin'];
             $_SESSION['user'] = $user['firstname'];
-            $_SESSION['id'] = $user['id'];
+            $_SESSION['user_id'] = $user['id'];
             header('location:index.php');
             exit;
         }
@@ -25,7 +25,7 @@ function login($email, $password){
     return $loginmessage;
 }
 
-function register($firstname, $lastname, $email, $numerotel, $adresse, $ville, $password)
+function register($firstname, $lastname, $email, $numerotel, $entreprise, $adresse, $ville, $password)
 {
     $db = dbConnect();
 
@@ -41,13 +41,14 @@ function register($firstname, $lastname, $email, $numerotel, $adresse, $ville, $
 
     else{
 
-    $query = $db->prepare('INSERT INTO user (firstname, lastname, email, numerotel, adresse, ville, password) VALUES (?, ?, ?, ?, ?, ?, ?)');
+    $query = $db->prepare('INSERT INTO user (firstname, lastname, email, numerotel, entreprise, adresse, ville, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
         $query->execute(
             [
                 $firstname,
                 $lastname,
                 $email,
                 $numerotel,
+                $entreprise,
                 $adresse,
                 $ville,
                 hash('md5', $password),
@@ -56,6 +57,7 @@ function register($firstname, $lastname, $email, $numerotel, $adresse, $ville, $
 
             $_SESSION['is_admin'] = 0; //PAS ADMIN !
             $_SESSION['user'] = $firstname;
+            $_SESSION['id'] = $db->lastInsertId();
 
     }
 

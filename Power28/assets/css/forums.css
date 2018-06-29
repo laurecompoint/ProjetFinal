@@ -38,10 +38,16 @@ a:hover{
     position: fixed;
     top: 2;
     z-index: 1;
-    width: 100%;
-    background-color: #f1f1f1;
+    width: 75%;
+    margin-top: 76px;
+    background-color : #f1f1f1;
 }
-
+.headercontainer{
+    background-color : #f1f1f1;
+}
+.widthblock{
+    width: 75%;
+}
 .header h2 {
     text-align: center;
 }

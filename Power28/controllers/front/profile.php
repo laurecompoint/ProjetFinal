@@ -7,10 +7,10 @@ if(!isset($_SESSION['user'])){
 }
 else{
 
-    $user = UserProfile($_SESSION['id']);
+    $user = UserProfile($_SESSION['user_id']);
 
     if(isset($_POST['update'])) {
-        User($_POST['firstname'],$_POST['lastname'], $_POST['numerotel'], $_POST['adresse'], $_POST['ville'], $_POST['email'], $_SESSION['id']);
+        $updateMessage = User($_POST['firstname'],$_POST['lastname'], $_POST['numerotel'], $_POST['adresse'], $_POST['ville'], $_POST['email'], $_SESSION['user_id']);
         header('location:index.php');
         exit;
 

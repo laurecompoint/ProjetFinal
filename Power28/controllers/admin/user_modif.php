@@ -5,14 +5,14 @@ require_once('models/admin/user_modif.php');
 
 if(isset($_POST['save']))
 {
-    insertuser($_POST['firstname'], $_POST['lastname'],  $_POST['is_admin'], $_POST['email'], $_POST['numerotel'], $_POST['adresse'], $_POST['ville'], $_POST['password']);
-    $message  = insertuser($_POST['firstname'], $_POST['lastname'],  $_POST['is_admin'], $_POST['email'], $_POST['numerotel'], $_POST['adresse'], $_POST['ville'], $_POST['password']);
+    insertuser($_POST['firstname'], $_POST['lastname'], $_POST['entreprise'], $_POST['is_admin'], $_POST['email'], $_POST['numerotel'], $_POST['adresse'], $_POST['ville'], $_POST['password']);
+    $message  = insertuser($_POST['firstname'], $_POST['lastname'], $_POST['entreprise'], $_POST['is_admin'], $_POST['email'], $_POST['numerotel'], $_POST['adresse'], $_POST['ville'], $_POST['password']);
 
 }
 if(isset($_POST['update']))
 {
-    updateuser($_POST['firstname'], $_POST['lastname'],  $_POST['is_admin'], $_POST['email'], $_POST['numerotel'], $_POST['adresse'], $_POST['ville'], $_POST['password'], $_POST['id']);
-    $message  = insertuser($_POST['firstname'], $_POST['lastname'],  $_POST['is_admin'], $_POST['email'], $_POST['numerotel'], $_POST['adresse'], $_POST['ville'], $_POST['password']);
+    updateuser($_POST['firstname'], $_POST['lastname'], $_POST['entreprise'],  $_POST['is_admin'], $_POST['email'], $_POST['numerotel'], $_POST['adresse'], $_POST['ville'], $_POST['password'], $_POST['id']);
+    $message  = insertuser($_POST['firstname'], $_POST['lastname'], $_POST['entreprise'], $_POST['is_admin'], $_POST['email'], $_POST['numerotel'], $_POST['adresse'], $_POST['ville'], $_POST['password']);
 
 
 }
