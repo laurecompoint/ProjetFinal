@@ -16,7 +16,7 @@
 
     <form action="index.php?admin=commentaire_modif" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="name">Contenue du commentaire:</label><br>
+            <label for="content">Contenue du commentaire:</label><br>
             <input class="form-control" <?php if(isset($commentaire)): ?>value="<?php echo $commentaire['content']?>"<?php endif; ?> type="text" placeholder="content" name="content" id="content" />
         </div>
 

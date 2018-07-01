@@ -26,19 +26,11 @@ body{
 .borderbutton a:hover{
     text-decoration: none;
 }
-.fonctionlogciel{
-    background-color: #2C7193;
-}
 .borderbuttonTwo{
     border: ridge 5px black;
     width: 600px;
     margin-top: 40px;
     background-color: white;
-}
-.footer{
-    background-color: #55A3AF;
-    padding-bottom: 10px;
-    padding-top: 3px;
 }
 .picture{
     height: 100px;
@@ -48,20 +40,9 @@ body{
 a{
     color: black;
 }
-.fonctionOne{
+.functionOne{
     height: 400px;
     width: 80%;
-}
-.fonctionTwo{
-    border-right: ridge 5px black;
-}
-.pictureTwo{
-    border: ridge 3px black;
-    height: 400px;
-}
-.pictureThree{
-    border: ridge 3px black;
-    height: 400px;
 }
 .button{
     background-color: #55A3AF;
@@ -95,10 +76,6 @@ a{
     }
     .fonction{
         margin-top: 20px;
-    }
-    .fonctionTwo{
-        border-right: none;
-        border-bottom: ridge 5px black;
     }
     .title{
         margin-left: 0;
@@ -166,7 +143,7 @@ a{
     .picture{
         margin-left: 0px;
     }
-    .fonctionOne{
+    .functionOne{
         height: 200px;
         width: 80%;
     }

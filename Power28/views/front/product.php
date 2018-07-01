@@ -159,12 +159,12 @@
 <div class="d-flex flex-column col-md-5 justify-content-end mb-5 mt-5">
     <div class="row otherproduct mb-5">
         <div class="col-6 d-flex flex-column imgcenter">
-        <img src="assets/img/imprimente.png" class="etiquettes" alt="stock"/>
+        <img src="assets/img/imprimente.png" class="label" alt="stock"/>
             <p class="text-center">LabelWriterTM 450</p>
         </div>
         <div class="col-6 d-flex flex-column imgcenter">
 
-        <img src="assets/img/etiquettes.png" class="etiquettes" alt="stock"/>
+        <img src="assets/img/etiquettes.png" class="label" alt="stock"/>
             <p class="text-center">Dymo 11352</p>
         </div>
     </div>

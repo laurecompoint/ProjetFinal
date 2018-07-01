@@ -51,8 +51,6 @@
 
     <div class="mt-5 col-12">
 
-        <?php if(isset($_SESSION['user'])) : ?>
-
             <hr>
 
             <h3>Espace commentaire</h3>
@@ -67,8 +65,6 @@
                     <input class="btn button mt-3 text-white" type="submit" name="save" value="Valider" />
                 </div>
             </form>
-        <?php else: ?>
-        <?php endif; ?>
     </div>
 </div>
 </body>

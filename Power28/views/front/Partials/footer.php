@@ -11,11 +11,11 @@
       </div>
       <div class="col-md-6 text-white mt-4 link text-right">
 
-            <p class="address">Adresse de la societe : Toulouse & Paris / <a href="index.php?page=mentionlegal">Mention legal</a></p>
-            <div class="row logosocio d-flex justify-content-end">
+            <p class="address">Adresse de la société : Toulouse & Paris / <a href="index.php?page=mentionlegal">Mention legal</a></p>
+            <div class="row logosocio d-flex justify-content-end margine">
 
-                <p class="margine">Tous nos réseaux sociaux : </p>
-                <div class="logomargine">
+                <p>Tous nos réseaux sociaux : </p>
+                <div class="logomargine ml-1">
                     <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook logosize"></i></a>
                     <a href="https://www.messenger.com/i"><i class="fab fa-facebook-messenger logosize" ></i></a>
                     <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram logosize" ></i></a>

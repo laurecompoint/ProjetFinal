@@ -9,7 +9,7 @@
 <?php require ('Partials/nav.php');?>
 <div class="contact d-flex justify-content-center">
 
-    <h4 class="mt-4">Contact Us</h4>
+    <h4 class="mt-4">Contactez nous</h4>
 
 </div>
 
@@ -22,7 +22,7 @@
     </div>
     <div class="inputcontact form-group col-sm-8 offset-sm-2">
         <label for="email"><p>Message</p> </b></label>
-        <input class="form-control" value="" type="text" placeholder="message" name="message" id="email" />
+        <input class="form-control" value="" type="text" placeholder="Message" name="message" id="email" />
         <input class="btn button text-white mt-3" type="submit" name="envoyer" value="Envoyer" />
     </div>
     </form>

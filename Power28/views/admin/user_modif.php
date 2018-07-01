@@ -24,8 +24,8 @@
             <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['lastname']?>"<?php endif; ?> type="text" placeholder="lastname" name="lastname" id="lastname" />
         </div>
         <div class="form-group">
-            <label for="name">Entreprise:</label><br>
-            <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['entreprise']?>"<?php endif; ?> type="text" placeholder="entreprise" name="entreprise" id="entreprise" />
+            <label for="compagny">Entreprise:</label><br>
+            <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['compagny']?>"<?php endif; ?> type="text" placeholder="entreprise" name="compagny" id="compagny" />
         </div>
         <div class="form-group">
             <label for="is_admin"> Admin ?</label>
@@ -35,23 +35,23 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="name">Adresse</label><br>
+            <label for="adresse">Adresse</label><br>
             <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['adresse']?>"<?php endif; ?> type="text" placeholder="adresse" name="adresse" id="adresse" />
         </div>
         <div class="form-group">
-            <label for="name">Ville</label><br>
-            <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['ville']?>"<?php endif; ?> type="text" placeholder="ville" name="ville" id="ville" />
+            <label for="city">Ville</label><br>
+            <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['city']?>"<?php endif; ?> type="text" placeholder="ville" name="city" id="city" />
         </div>
         <div class="form-group">
-            <label for="name">Numéro Téléphone</label><br>
-            <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['numerotel']?>"<?php endif; ?> type="text" placeholder="numerotel" name="numerotel" id="numerotel" />
+            <label for="tel">Numéro Téléphone</label><br>
+            <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['tel']?>"<?php endif; ?> type="number" placeholder="tel" name="tel" id="tel" />
         </div>
         <div class="form-group">
-            <label for="name">Mail</label><br>
-            <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['email']?>"<?php endif; ?> type="text" placeholder="email" name="email" id="email" />
+            <label for="email">Mail</label><br>
+            <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['email']?>"<?php endif; ?> type="email" placeholder="email" name="email" id="email" />
         </div>
         <div class="form-group">
-            <label for="name">Mot de passe</label><br>
+            <label for="password">Mot de passe</label><br>
             <input class="form-control" <?php if(isset($user)): ?>value="<?php echo $user['password']?>"<?php endif; ?> type="text" placeholder="password" name="password" id="password" />
         </div>
 

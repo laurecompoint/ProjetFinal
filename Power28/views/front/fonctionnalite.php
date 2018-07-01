@@ -90,7 +90,7 @@
 
               <div class="d-flex flex-column col-md-6">
 
-                  <img src="assets/img/imgfonction/accueil.png" alt="fonction1" class="fonctionOne">
+                  <img src="assets/img/imgfonction/accueil.png" alt="fonction1" class="functionOne">
 
               </div>
 
@@ -113,7 +113,7 @@
 
             <div class="d-flex flex-column col-md-6">
 
-                <img src="assets/img/imgfonction/catalogue1.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/catalogue1.png" alt="fonction1" class="functionOne">
 
 
             </div>
@@ -138,7 +138,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/catalogue3.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/catalogue3.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -154,7 +154,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/catalogue4.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/catalogue4.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -172,7 +172,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/catalogue5.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/catalogue5.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -187,7 +187,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/catalogue6.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/catalogue6.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -201,7 +201,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/catalogue7.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/catalogue7.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
@@ -212,7 +212,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/catalogue8.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/catalogue8.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
@@ -233,13 +233,13 @@
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <img src="assets/img/imgfonction/categorie1.png" alt="fonction1" class="col-10 fonctionOne">
+                                <img src="assets/img/imgfonction/categorie1.png" alt="fonction1" class="col-10 functionOne">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/imgfonction/categorie2.png" alt="fonction1" class="col-10 fonctionOne">
+                                <img src="assets/img/imgfonction/categorie2.png" alt="fonction1" class="col-10 functionOne">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/imgfonction/categorie3.png" alt="fonction1" class="col-10 fonctionOne">
+                                <img src="assets/img/imgfonction/categorie3.png" alt="fonction1" class="col-10 functionOne">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -270,7 +270,7 @@
     <div id="stock" class="row d-flex justify-content-center">
 
         <div class="d-flex flex-column col-md-6">
-            <img src="assets/img/imgfonction/debit.png" alt="fonction1" class="fonctionOne">
+            <img src="assets/img/imgfonction/debit.png" alt="fonction1" class="functionOne">
         </div>
 
         <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -287,7 +287,7 @@
     <div class="row d-flex justify-content-center">
 
         <div  class="d-flex flex-column col-md-6">
-            <img src="assets/img/imgfonction/inventaire.png" alt="fonction1" class="fonctionOne stock">
+            <img src="assets/img/imgfonction/inventaire.png" alt="fonction1" class="functionOne stock">
         </div>
 
         <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -302,7 +302,7 @@
       <div id="stock" class="row d-flex justify-content-center">
 
           <div class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/transaction1.png" alt="fonction1" class="fonctionOne">
+              <img src="assets/img/imgfonction/transaction1.png" alt="fonction1" class="functionOne">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -315,7 +315,7 @@
       <div class="row d-flex justify-content-center mt-5">
 
           <div  class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/transaction2.png" alt="fonction1" class="fonctionOne stock">
+              <img src="assets/img/imgfonction/transaction2.png" alt="fonction1" class="functionOne stock">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
@@ -329,7 +329,7 @@
       <div id="stock" class="row d-flex justify-content-center">
 
           <div class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/fabricants1.png" alt="fonction1" class="fonctionOne">
+              <img src="assets/img/imgfonction/fabricants1.png" alt="fonction1" class="functionOne">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
@@ -341,7 +341,7 @@
       <div class="row d-flex justify-content-center mt-5">
 
           <div  class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/fabricants2.png" alt="fonction1" class="fonctionOne stock">
+              <img src="assets/img/imgfonction/fabricants2.png" alt="fonction1" class="functionOne stock">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -357,7 +357,7 @@
       <div id="stock" class="row d-flex justify-content-center">
 
           <div class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/fournisseurs1.png" alt="fonction1" class="fonctionOne">
+              <img src="assets/img/imgfonction/fournisseurs1.png" alt="fonction1" class="functionOne">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -370,7 +370,7 @@
       <div class="row d-flex justify-content-center mt-5">
 
           <div  class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/fournisseurs2.png" alt="fonction1" class="fonctionOne stock">
+              <img src="assets/img/imgfonction/fournisseurs2.png" alt="fonction1" class="functionOne stock">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -384,7 +384,7 @@
     <div class="row d-flex justify-content-center">
 
         <div class="d-flex flex-column col-md-6 commandesimage">
-            <img src="assets/img/imgfonction/commande1.png" alt="fonction1" class="fonctionOne">
+            <img src="assets/img/imgfonction/commande1.png" alt="fonction1" class="functionOne">
         </div>
 
         <div class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -405,7 +405,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/commande2.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/commande2.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -418,7 +418,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/commande3.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/commande3.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -431,7 +431,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/commande4.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/commande4.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -449,7 +449,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/commande5.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/commande5.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -463,7 +463,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/commande6.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/commande6.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -478,7 +478,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/commande7.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/commande7.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
@@ -489,7 +489,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/commande8.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/commande8.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
@@ -500,7 +500,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/commande9.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/commande9.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -513,7 +513,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/commande10.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/commande10.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -529,7 +529,7 @@
         <div class="row d-flex justify-content-center mt-5">
 
             <div class="d-flex flex-column col-md-6">
-                <img src="assets/img/imgfonction/commande11.png" alt="fonction1" class="fonctionOne">
+                <img src="assets/img/imgfonction/commande11.png" alt="fonction1" class="functionOne">
             </div>
 
             <div class="bg-white block col-md-6 text-center d-flex align-items-center">
@@ -549,7 +549,7 @@
       <div id="stock" class="row d-flex justify-content-center">
 
           <div class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/lieu1.png" alt="fonction1" class="fonctionOne">
+              <img src="assets/img/imgfonction/lieu1.png" alt="fonction1" class="functionOne">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
@@ -561,7 +561,7 @@
       <div class="row d-flex justify-content-center mt-5">
 
           <div  class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/lieu2.png" alt="fonction1" class="fonctionOne stock">
+              <img src="assets/img/imgfonction/lieu2.png" alt="fonction1" class="functionOne stock">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -576,7 +576,7 @@
     <div class="row d-flex justify-content-center imagehistorique">
 
         <div class="d-flex flex-column col-md-6">
-            <img src="assets/img/imgfonction/historique.png" alt="fonction1" class="fonctionOne">
+            <img src="assets/img/imgfonction/historique.png" alt="fonction1" class="functionOne">
         </div>
 
         <div class="text bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
@@ -590,7 +590,7 @@
       <div id="stock" class="row d-flex justify-content-center">
 
           <div class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/utilisateurs1.png" alt="fonction1" class="fonctionOne">
+              <img src="assets/img/imgfonction/utilisateurs1.png" alt="fonction1" class="functionOne">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center justify-content-center">
@@ -602,7 +602,7 @@
       <div class="row d-flex justify-content-center mt-5">
 
           <div  class="d-flex flex-column col-md-6">
-              <img src="assets/img/imgfonction/utilisateurs2.png" alt="fonction1" class="fonctionOne stock">
+              <img src="assets/img/imgfonction/utilisateurs2.png" alt="fonction1" class="functionOne stock">
           </div>
 
           <div id="transactiontext" class="text bg-white block col-md-6 text-center d-flex align-items-center">
@@ -617,7 +617,7 @@
     <div class="row d-flex justify-content-center parametretext">
 
         <div class="d-flex flex-column col-md-6">
-            <img src="assets/img/imgfonction/parametres.png" alt="fonction1" class="fonctionOne">
+            <img src="assets/img/imgfonction/parametres.png" alt="fonction1" class="functionOne">
         </div>
 
         <div class="text bg-white block col-md-6 text-center d-flex align-items-center">

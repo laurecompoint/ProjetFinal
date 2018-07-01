@@ -10,14 +10,8 @@ a:hover {
 .stock {
   height: 400px; }
 
-.logicielordi {
+.softwareordi {
   height: 250px; }
-
-.logicielstock, .blockContact, .test, .title {
-  background-color: #FBF9F9; }
-
-.logiciel {
-  margin-right: -60px; }
 
 .borderbuttonOne {
   border: ridge 5px black;
@@ -80,14 +74,10 @@ a:hover {
   margin-top: 150px; }
 
 @media (max-width: 425px) {
-  .logiciel {
-    margin-top: 30px;
-    height: 100px; }
-
   .margine {
     margin-left: 0; }
 
-  .logicielordi {
+  .softwareordi {
     width: 80%;
     height: 200px;
     display: flex;
@@ -104,10 +94,7 @@ a:hover {
     left: 90px;
     top: 1600px; }
 
-  .logiciel {
-    margin-right: 10px; }
-
-  .logicielordi {
+  .softwareordi {
     width: 60%;
     height: 200px; }
 

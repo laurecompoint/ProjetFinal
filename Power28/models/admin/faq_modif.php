@@ -23,15 +23,15 @@ function faqdelate($faq_id)
     return $message;
 
 }
-function insertfaq($question, $reponse,  $category_id, $is_published)
+function insertfaq($question, $answer,  $category_id, $is_published)
 {
     $db = dbConnect();
 
 
-    $faq = $db->prepare('INSERT INTO faq (question, reponse, category_id, is_published, created_at) VALUES(?, ?, ?, ?, NOW())');
+    $faq = $db->prepare('INSERT INTO faq (question, answer, category_id, is_published, created_at) VALUES(?, ?, ?, ?, NOW())');
     $faq ->execute(array(
         $question,
-        $reponse,
+        $answer,
         $category_id,
         $is_published,
     ));
@@ -43,12 +43,12 @@ function insertfaq($question, $reponse,  $category_id, $is_published)
     }
     return $message;
 }
-function udaptefaq($question, $reponse, $category_id, $id){
+function udaptefaq($question, $answer, $category_id, $id){
     $db = dbConnect();
 
     $faqudapte = $db->prepare('UPDATE faq SET
 		question = :question,
-		reponse = :reponse,
+		answer = :answer,
 		category_id = :category_id
 		WHERE id = :id'
     );
@@ -56,7 +56,7 @@ function udaptefaq($question, $reponse, $category_id, $id){
     $faqudapte->execute(
         [
             'question' =>  $question,
-            'reponse' => $reponse,
+            'answer' => $answer,
             'category_id' => $category_id,
             'id' => $id,
         ]

@@ -55,7 +55,7 @@
                         <div class="text-danger col-12 mb-4 mt-3"><?php echo $messagesubject; ?></div>
                     <?php endif; ?>
 
-                        <?php if(isset($_SESSION['user'])) : ?>
+
 
                     <form action="index.php?page=forum_list&category_id=<?php echo $topic['category_id'] ?>" method="post">
                         <div class="form-group col-12 mt-4">
@@ -71,8 +71,7 @@
                         </div>
                     </form>
 
-                        <?php else: ?>
-                        <?php endif; ?>
+
 
                     </div>
 
@@ -84,7 +83,7 @@
     <p class="ml-3">Aucun suject dans cette catégorie de forum...</p>
 
 
-    <?php endif; ?>
+<?php endif; ?>
 
 <footer class="mt-5">
 

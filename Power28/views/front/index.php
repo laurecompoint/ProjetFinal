@@ -9,13 +9,13 @@
         <h1 class="">Un logiciel de stock : Pratique et Sécurisé</h1>
         </div>
 
-      <div class="row logicielstock mt-3 col-12">
+      <div class="row mt-3 col-12">
               <div class="col-md-6 block d-flex justify-content-center mt-4">
-                  <img src="assets/img/stock.png" class="col-md- stock" alt="stock"/>
+                  <img src="assets/img/stock.png" class="stock" alt="stock"/>
               </div>
                 <div class="col-md-6 block d-flex justify-content-center mt-4">
 
-                    <img src="assets/img/ordilogiciel.png" class="logicielordi" alt="stock"/>
+                    <img src="assets/img/ordilogiciel.png" class="softwareordi" alt="stock"/>
                 </div>
       </div>
 
@@ -45,7 +45,7 @@
 
       <div class="col-md-5 mt-5 d-flex justify-content-end">
 
-          <img src="assets/img/logicielipad.png" class="col-7 logicielordi" alt="stock"/>
+          <img src="assets/img/logicielipad.png" class="col-7 softwareordi" alt="stock"/>
 
       </div>
   </div>

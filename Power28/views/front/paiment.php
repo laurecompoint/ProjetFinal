@@ -15,7 +15,7 @@
 
 </div>
 
-<div class="row test container-fluid justify-content-start mt-5">
+<div class="row container-fluid justify-content-start mt-5">
 
         <img src="assets/img/ordilogiciel.png" class="stock col-3" alt="stock"/>
 
@@ -30,17 +30,13 @@
 <div class="mt-5 container-fluid">
 
     <p>Prix total : 1200€</p>
-    <form action="index.php?page=paiment" method="POST">
-        <script
-                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+
+    <form action="charge.php" method="post">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="pk_test_UsC2qjBr6F3TWoWSrlkkexgS"
-                data-amount="120000"
-                data-name="Laure"
-                data-description="Example charge"
-                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-                data-locale="auto"
-                data-currency="eur">
-        </script>
+                data-description="Access for a year"
+                data-amount="5000"
+                data-locale="auto"></script>
     </form>
 </div>
 

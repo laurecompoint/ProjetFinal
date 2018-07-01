@@ -1,20 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
-    <meta hhtp-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/user.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <title>Power 28 : Connection/Inscription</title>
-
 </head>
-<body>
+<body class="body">
 
 <?php require ('Partials/nav.php');?>
 
@@ -22,7 +12,6 @@
     <div class="row my-3 d-flex justify-content-center mt-5">
 
         <main class="col-7">
-
 
             <ul class="nav nav-tabs justify-content-center nav-fill"  role="tablist">
                 <li class="nav-item">
@@ -73,31 +62,31 @@
 
                         <div class="form-group col-sm-8 offset-sm-2">
                             <label for="firstname">Prénom <b class="text-danger">*</b></label>
-                            <input class="form-control" value="" type="text" placeholder="Prénom" name="firstname" id="firstname" />
+                            <input class="form-control"  type="text" placeholder="Prénom" name="firstname" id="firstname" />
                         </div>
                         <div class="form-group col-sm-8 offset-sm-2">
-                            <label for="lastname">Nom de famille</label>
-                            <input class="form-control" value="" type="text" placeholder="Nom de famille" name="lastname" id="lastname" />
+                            <label for="lastname">Nom de famille <b class="text-danger">*</b></label>
+                            <input class="form-control"  type="text" placeholder="Nom de famille" name="lastname" id="lastname" />
                         </div>
                         <div class="form-group col-sm-8 offset-sm-2">
                             <label for="email">Email <b class="text-danger">*</b></label>
-                            <input class="form-control" value="" type="email" placeholder="Email" name="email" id="email" />
+                            <input class="form-control" type="email" placeholder="Email" name="email" id="email" />
                         </div>
                         <div class="form-group col-sm-8 offset-sm-2">
-                            <label for="bio">Numéro de télèphone</label>
-                            <textarea class="form-control" name="numerotel" id="telphone" placeholder="Téléphone"></textarea>
+                            <label for="tel">Numéro de télèphone <b class="text-danger">*</b></label>
+                            <input class="form-control" name="tel" id="phone" type="number" placeholder="Téléphone">
                         </div>
                         <div class="form-group col-sm-8 offset-sm-2">
-                            <label for="bio">Nom de la societe</label>
-                            <textarea class="form-control" name="entreprise" id="entreprise" placeholder="entreprise"></textarea>
+                            <label for="compagny">Nom de la societe <b class="text-danger">*</b></label>
+                            <input class="form-control" name="compagny" id="compagny" placeholder="Entreprise">
                         </div>
                         <div class="form-group col-sm-8 offset-sm-2">
-                            <label for="bio">Adresse</label>
-                            <textarea class="form-control" name="adresse" id=adresse placeholder="Adresse"></textarea>
+                            <label for="adresse">Adresse <b class="text-danger">*</b></label>
+                            <textarea class="form-control" name="adresse" id="map" placeholder="Adresse"></textarea>
                         </div>
                         <div class="form-group col-sm-8 offset-sm-2">
-                            <label for="bio">Ville/code postale</label>
-                            <textarea class="form-control" name="ville" id="ville" placeholder="Ville / Code postale"></textarea>
+                            <label for="city">Ville/code postale <b class="text-danger">*</b></label>
+                            <textarea class="form-control" name="city" id="city" placeholder="Ville / Code postale"></textarea>
                         </div>
 
                         <div class="form-group col-sm-8 offset-sm-2">
@@ -128,9 +117,6 @@
 </div>
 
 </body>
-
-
-
 
 </html>
 

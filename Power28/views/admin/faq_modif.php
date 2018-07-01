@@ -16,12 +16,12 @@
 
     <form action="index.php?admin=faq_modif" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="name">Question :</label><br>
+            <label for="question">Question :</label><br>
             <input class="form-control" <?php if(isset($faq)): ?>value="<?php echo $faq['question']?>"<?php endif; ?> type="text" placeholder="question" name="question" id="question" />
         </div>
         <div class="form-group">
-            <label for="name">Réponses :</label><br>
-            <input class="form-control" <?php if(isset($faq)): ?>value="<?php echo $faq['reponse']?>"<?php endif; ?> type="text" placeholder="reponse" name="reponse" id="reponse" />
+            <label for="answer">Réponses :</label><br>
+            <input class="form-control" <?php if(isset($faq)): ?>value="<?php echo $faq['answer']?>"<?php endif; ?> type="text" placeholder="answer" name="answer" id="answer" />
         </div>
 
         <div class="form-group">

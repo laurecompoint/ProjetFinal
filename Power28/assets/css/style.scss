@@ -1,11 +1,12 @@
+$background: #FBF9F9;
+$borderbutton: ridge 5px black;
 body{
   margin: 0;
   padding: 0;
   font-family: 'Skia', sans-serif;
-  background-color: #FBF9F9;
+  background-color: $background;
 }
-$background: #FBF9F9;
-$borderbutton: ridge 5px black;
+
 a:hover{
   text-decoration: none;
 }
@@ -13,14 +14,8 @@ a:hover{
   height: 400px;
 }
 
-.logicielordi{
+.softwareordi{
   height: 250px;
-}
-.logicielstock, .blockContact, .test, .title{
-  background-color: $background;
-}
-.logiciel{
-  margin-right: -60px;
 }
 .borderbuttonOne{
   border: $borderbutton;
@@ -85,14 +80,10 @@ a:hover{
   margin-top: 150px;
 }
 @media(max-width: 425px){
-  .logiciel{
-    margin-top: 30px;
-    height: 100px;
-  }
   .margine{
     margin-left: 0;
   }
-  .logicielordi{
+  .softwareordi{
     width: 80%;
     height: 200px;
     display: flex;
@@ -104,8 +95,6 @@ a:hover{
   .stock{
     height: 250px;
   }
-
-
 }
 @media(max-width: 768px){
   #icon{
@@ -113,10 +102,7 @@ a:hover{
     left: 90px;
     top: 1600px;
   }
-  .logiciel{
-    margin-right: 10px;
-  }
-  .logicielordi{
+  .softwareordi{
     width: 60%;
     height: 200px;
   }

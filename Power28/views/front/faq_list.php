@@ -33,7 +33,7 @@
 
                <div id="<?php echo $faq['id']?>" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
 
-                      <p class="mt-3"><?php echo $faq['reponse']; ?></p>
+                      <p class="mt-3"><?php echo $faq['answer']; ?></p>
 
                 </div>
 

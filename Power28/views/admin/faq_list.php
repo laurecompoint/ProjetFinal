@@ -42,7 +42,7 @@
                 <tr>
                     <!-- htmlentities sert à écrire les balises html sans les interpréter -->
                     <th><?php echo htmlentities($faq['id']); ?></th>
-                    <td><?php echo htmlentities($faq['question']); ?></td>
+                    <td><?php echo htmlentities($faq['answer']); ?></td>
                     <td>
                         <a href="index.php?admin=faq_modif&faq_id=<?php echo $faq['id']; ?>&action=edit" class="btn btn-secondary">Modifier</a>
                         <a onclick="return confirm('Are you sure?')" href="index.php?admin=faq_list&faq_id=<?php echo $faq['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>

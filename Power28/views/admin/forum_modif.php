@@ -16,11 +16,11 @@
 
     <form action="index.php?admin=forum_modif" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="name">Subject forum :</label><br>
-            <input class="form-control" <?php if(isset($forum)): ?>value="<?php echo $forum['name']?>"<?php endif; ?> type="text" placeholder="name" name="name" id="name" />
+            <label for="subject">Subject forum :</label><br>
+            <input class="form-control" <?php if(isset($forum)): ?>value="<?php echo $forum['name']?>"<?php endif; ?> type="text" placeholder="name" name="name" id="subjectname" />
         </div>
         <div class="form-group">
-            <label for="name">Résumer du suject :</label><br>
+            <label for="summary">Résumer du suject :</label><br>
             <input class="form-control" <?php if(isset($forum)): ?>value="<?php echo $forum['content']?>"<?php endif; ?> type="text" placeholder="content" name="content" id="content" />
         </div>
 

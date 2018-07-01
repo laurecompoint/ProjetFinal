@@ -19,6 +19,10 @@ else{
 
 if(isset($_POST['savesubject']))
 {
+    if(!isset($_SESSION['user'])){
+        header('location:index.php?page=login');
+        exit;
+    }
 
     if(empty($_POST['content']) OR empty($_POST['name']))
     {

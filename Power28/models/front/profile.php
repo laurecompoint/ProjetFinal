@@ -7,17 +7,17 @@ function UserProfile($user_id){
 
 }
 
-function User($firstname, $lastname, $numerotel, $adresse, $ville, $email, $user_id){
+function User($firstname, $lastname, $compagny, $tel, $adresse, $city, $email, $user_id){
     $db = dbConnect();
 
     $query = $db->prepare('SELECT email FROM user WHERE email = ?');
-    $query->execute(array($_POST['email']));
+    $query->execute(array($email));
 
     $emailAlreadyExists = $query->fetch();
-    if($emailAlreadyExists && $emailAlreadyExists['email'] != $_POST['email']){
+    if($emailAlreadyExists && $emailAlreadyExists['email'] != $email){
         $updateMessage = "Adresse email déjà utilisée";
     }
-    elseif(empty($_POST['firstname']) OR empty($_POST['email']) OR empty($_POST['adresse']) OR empty($_POST['ville']) OR empty($_POST['numerotel']) OR empty($_POST['lastname']))
+    elseif(empty($firstname) OR empty($email) OR empty($adresse) OR empty($city) OR empty($compagny) OR empty($tel) OR empty($lastname))
     {
     $updateMessage = "Merci de remplir tous les champs obligatoires (*)";
     }
@@ -29,18 +29,20 @@ function User($firstname, $lastname, $numerotel, $adresse, $ville, $email, $user
         $queryString = 'UPDATE user SET 
             firstname = :firstname, 
             lastname = :lastname, 
-            numerotel = :numerotel, 
+            compagny = :compagny,
+            tel = :tel, 
             adresse = :adresse, 
-            ville = :ville,
+            city = :city,
             email = :email
             ';
 
         $queryParameters = [
             'firstname' => $firstname,
             'lastname' => $lastname,
-            'numerotel' => $numerotel,
+            'compagny' => $compagny,
+            'tel' => $tel,
             'adresse' => $adresse,
-            'ville' =>  $ville,
+            'city' =>  $city,
             'email' => $email,
             'id' =>  $user_id,
         ];
@@ -57,13 +59,10 @@ function User($firstname, $lastname, $numerotel, $adresse, $ville, $email, $user
 
         $result = $query->execute($queryParameters);
         if($result){
-
-            $_SESSION['user'] = $_POST['firstname'];
+            $_SESSION['user'] = $firstname;
             $updateMessage = "Informations mises à jour avec succès !";
-
-
             $query = $db->prepare('SELECT * FROM user WHERE id = ?');
-            $query->execute(array($_SESSION['user_id']));
+            $query->execute(array($user_id));
             $query->fetch();
             return $query;
 

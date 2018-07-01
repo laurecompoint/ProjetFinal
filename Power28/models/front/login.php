@@ -25,7 +25,7 @@ function login($email, $password){
     return $loginmessage;
 }
 
-function register($firstname, $lastname, $email, $numerotel, $entreprise, $adresse, $ville, $password)
+function register($firstname, $lastname, $email, $tel, $compagny, $adresse, $city, $password)
 {
     $db = dbConnect();
 
@@ -41,23 +41,23 @@ function register($firstname, $lastname, $email, $numerotel, $entreprise, $adres
 
     else{
 
-    $query = $db->prepare('INSERT INTO user (firstname, lastname, email, numerotel, entreprise, adresse, ville, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+    $query = $db->prepare('INSERT INTO user (firstname, lastname, email, tel, compagny, adresse, city, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
         $query->execute(
             [
                 $firstname,
                 $lastname,
                 $email,
-                $numerotel,
-                $entreprise,
+                $tel,
+                $compagny,
                 $adresse,
-                $ville,
+                $city,
                 hash('md5', $password),
             ]
         );
 
             $_SESSION['is_admin'] = 0; //PAS ADMIN !
             $_SESSION['user'] = $firstname;
-            $_SESSION['id'] = $db->lastInsertId();
+            $_SESSION['user_id'] = $db->lastInsertId();
 
     }
 

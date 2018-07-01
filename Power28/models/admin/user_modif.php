@@ -13,20 +13,20 @@ function userdelate($user_id)
     $query->execute ([ $user_id ]);
 
 }
-function insertuser($firstname, $lastname, $entreprise, $is_admin, $email, $numerotel, $adresse, $ville, $password)
+function insertuser($firstname, $lastname, $compagny, $is_admin, $email, $tel, $adresse, $city, $password)
 {
     $db = dbConnect();
-    $query = $db->prepare('INSERT INTO user (firstname, lastname, entreprise, is_admin, email, numerotel, adresse, ville, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
+    $query = $db->prepare('INSERT INTO user (firstname, lastname, compagny, is_admin, email, tel, adresse, city, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
     $query->execute(
         [
             $firstname,
             $lastname,
-            $entreprise,
+            $compagny,
             $is_admin,
             $email,
-            $numerotel,
+            $tel,
             $adresse,
-            $ville,
+            $city,
             hash('md5', $password)
         ]
     );
@@ -39,7 +39,7 @@ function insertuser($firstname, $lastname, $entreprise, $is_admin, $email, $nume
     }
     return $message;
 }
-function updateuser($firstname, $lastname, $is_admin, $entreprise, $email, $numerotel, $adresse, $ville, $password, $id){
+function updateuser($firstname, $lastname, $is_admin, $compagny, $email, $tel, $adresse, $city, $password, $id){
 
     $db = dbConnect();
 
@@ -47,11 +47,11 @@ function updateuser($firstname, $lastname, $is_admin, $entreprise, $email, $nume
 		firstname = :firstname,
 		lastname = :lastname,
 		is_admin = :is_admin,
-		entreprise = :entreprise,
+		compagny = :compagny,
 		email = :email,
-		numerotel = :numerotel,
+		tel = :tel,
 		adresse = :adresse,		
-		ville = :ville,
+		city = :city,
 		password = :password
 		WHERE id = :id'
     );
@@ -61,11 +61,11 @@ function updateuser($firstname, $lastname, $is_admin, $entreprise, $email, $nume
             'firstname' =>  $firstname,
             'lastname' => $lastname,
             'is_admin' => $is_admin,
-            'entreprise' => $entreprise,
+            'compagny' => $compagny,
             'email' => $email,
-            'numerotel' => $numerotel,
+            'tel' => $tel,
             'adresse' => $adresse,
-            'ville'   =>  $ville,
+            'city'   =>  $city,
             'password' => hash('md5',  $password),
             'id' => $id,
         ]
