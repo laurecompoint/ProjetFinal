@@ -11,7 +11,7 @@
     $nbCommentaire = $db->query("SELECT COUNT(*) FROM commentaire")->fetchColumn();
 ?>
 
-    <div class="row d-flex justify-content-around bg-white">
+    <div class="navlink row d-flex justify-content-around">
 
 		<a href="index.php?admin=user_list">Gestion des utilisateurs (<?php echo $nbUsers; ?>)</a>
 		<a href="index.php?admin=category_list">Gestion des catégories (<?php echo $nbCategories; ?>)</a>

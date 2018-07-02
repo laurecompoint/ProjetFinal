@@ -8,9 +8,11 @@
 </head>
 <body class="body">
 <?php require ('Partials/nav.php');?>
+
 <div class="subjectforum d-flex flex-column justify-content-center">
     <?php require 'category.php'; ?>
 </div>
+
 <?php if(!empty($forums)): ?>
 
                 <div class="subject col-md-9 mt-5">
@@ -31,13 +33,10 @@
                             <i class="far fa-calendar-alt col-md-1"></i>
                             <p class="col-md-3" ><?php echo $topic['created_at']; ?></p>
                         </div>
-
                     </div>
 
                     <?php endforeach; ?>
                 </div>
-
-
 
                 <div class="mt-5 col-md-12 row align-items-center justify-content-center">
 
@@ -55,8 +54,6 @@
                         <div class="text-danger col-12 mb-4 mt-3"><?php echo $messagesubject; ?></div>
                     <?php endif; ?>
 
-
-
                     <form action="index.php?page=forum_list&category_id=<?php echo $topic['category_id'] ?>" method="post">
                         <div class="form-group col-12 mt-4">
                             <input type="hidden" name="author" value="<?php echo $_SESSION['user']; ?>" class="form-control" id="formGroupExampleInput2" placeholder="Your name">
@@ -71,8 +68,6 @@
                         </div>
                     </form>
 
-
-
                     </div>
 
                 </div>
@@ -81,7 +76,6 @@
 <?php else: ?>
 
     <p class="ml-3">Aucun suject dans cette catégorie de forum...</p>
-
 
 <?php endif; ?>
 

@@ -51,7 +51,7 @@
 
             <?php endforeach; ?>
         <?php else: ?>
-            Aucune catégorie enregistré.
+            Aucune FAQ enregistré.
         <?php endif; ?>
 
         </tbody>

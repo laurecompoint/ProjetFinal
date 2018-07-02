@@ -30,10 +30,10 @@ if(isset($_GET['page'])){
       require_once('front/contact.php');
   }
   elseif($_GET['page'] == 'mentionlegal'){
-      require_once('front/mentionlegal.php');
+      require_once('views/front/mentionlegal.php');
   }
-  elseif($_GET['page'] == 'paiment'){
-      require_once('front/paiment.php');
+  elseif($_GET['page'] == 'paiement'){
+      require_once('front/paiement.php');
   }
   elseif($_GET['page'] == 'error'){
       require_once('views/front/error.php');

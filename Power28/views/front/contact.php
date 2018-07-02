@@ -2,14 +2,14 @@
 <html>
 <head>
     <link rel="stylesheet" href="assets/css/contacts.css">
-    <title>Power 28 : Contact US</title>
+    <title>Power 28 : Contact </title>
 </head>
 
 
 <?php require ('Partials/nav.php');?>
 <div class="contact d-flex justify-content-center">
 
-    <h4 class="mt-4">Contactez nous</h4>
+    <h4 class="d-flex align-items-center text-white">Contactez nous</h4>
 
 </div>
 
@@ -21,7 +21,7 @@
         <input class="form-control" value="" type="email" placeholder="Email" name="email" id="email" />
     </div>
     <div class="inputcontact form-group col-sm-8 offset-sm-2">
-        <label for="email"><p>Message</p> </b></label>
+        <label for="message"><p>Message</p> </b></label>
         <input class="form-control" value="" type="text" placeholder="Message" name="message" id="email" />
         <input class="btn button text-white mt-3" type="submit" name="envoyer" value="Envoyer" />
     </div>

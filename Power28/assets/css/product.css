@@ -7,11 +7,16 @@ body{
     background-color: #FBF9F9;
 }
 .borderbutton a{
-    color: black;
+    color:black;
 }
 .borderbuttonOne{
     border: ridge 5px black;
-    width: 150px;
+    width: 85px;
+    height: 40px;
+}
+.borderbuttonTwo{
+    border: ridge 5px black;
+    width: 155px;
     height: 60px;
 }
 .stock{
@@ -48,6 +53,9 @@ a{
     .stock{
         height: 300px;
         width: 50%;
+    }
+    #marginequetion{
+        margin-top: 5px;
     }
 
 }

@@ -3,11 +3,11 @@
 function getCategory($categoryId){
 
 	$db = dbConnect();
-  $query = $db->prepare('SELECT * FROM category WHERE id = ?');
+    $query = $db->prepare('SELECT * FROM category WHERE id = ?');
 
-  $query->execute(array($categoryId));
+    $query->execute(array($categoryId));
 
-  return $query -> fetch();
+    return $query -> fetch();
 
 }
 

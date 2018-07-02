@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/user.css">
     <title>Power 28 : Mention Légal</title>
 
 </head>
@@ -12,7 +12,7 @@
 
 <div class="contact d-flex justify-content-center">
 
-    <h4 class="mt-4">Mention Légal</h4>
+    <h4 class="text-white d-flex align-items-center">Mention Légal</h4>
 
 </div>
 <div class="text-justify container-fluid mt-5">

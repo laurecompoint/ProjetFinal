@@ -6,6 +6,7 @@ body{
 .body{
     background-color: #FBF9F9;
 }
+/* Css page forum list */
 .blocktext{
     height: 100px;
 }
@@ -16,7 +17,6 @@ body{
 }
 .subject a{
     color: black;
-
 }
 a{
     color: black;
@@ -24,10 +24,7 @@ a{
 a:hover{
     text-decoration: none;
 }
-.forumcolor{
-    height: 400px;
-
-}
+/* Css page forum */
 .navheader{
     position: fixed;
     top: 0;
@@ -51,7 +48,6 @@ a:hover{
 .header h2 {
     text-align: center;
 }
-
 .progress-bar {
     height: 8px;
     background: #4caf50;
@@ -61,19 +57,12 @@ a:hover{
     padding: 100px 0;
     margin: 50px auto 0 auto;
     width: 80%;
-
 }
 .comment{
     height: 500px;
 }
 .button{
     background-color: #55A3AF;
-}
-.categoryquestion{
-    margin-top: 70px;
-}
-.questionmargine{
-    margin-top: 100px;
 }
 .question a{
     color: black;
@@ -82,15 +71,19 @@ a:hover{
     text-decoration: none;
     color: black;
 }
-.categoryfaq{
-    background-color: white;
-    height: 100px;
+/* Css page faq */
+.categoryquestion{
+    margin-top: 70px;
 }
 .question{
     width: 120px;
     height: 90px;
 }
+.questionmargine{
+    margin-top: 100px;
+}
 @media(max-width: 425px){
+    /* Css page forum */
     .newsubject{
         position: absolute;
         top: 600px;
@@ -104,6 +97,7 @@ a:hover{
     .subjectforum{
         height: 400px;
     }
+    /* Css page faq */
     .questionmargine{
         margin-top: 10px;
     }

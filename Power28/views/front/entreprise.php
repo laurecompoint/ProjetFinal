@@ -21,8 +21,6 @@
 
     </div>
 
-    <div id="ToulouseMap"></div>
-
 </div>
 
 <div class="d-flex flex-column justify-content-between m-auto bg-white">

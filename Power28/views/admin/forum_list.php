@@ -53,7 +53,7 @@
 
             <?php endforeach; ?>
         <?php else: ?>
-            Aucune catégorie enregistré.
+            Aucun forum enregistré.
         <?php endif; ?>
 
         </tbody>

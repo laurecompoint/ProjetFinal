@@ -6,14 +6,12 @@ body{
   font-family: 'Skia', sans-serif;
   background-color: $background;
 }
-
 a:hover{
   text-decoration: none;
 }
 .stock{
   height: 400px;
 }
-
 .softwareordi{
   height: 250px;
 }
@@ -27,11 +25,6 @@ a:hover{
 .borderbutton a:hover{
   text-decoration: none;
 }
-.fonction{
-  background-color: #FBF9F9;
-  padding-bottom: 50px;
-
-}
 .borderbuttonTwo{
   border: $borderbutton;
   width: 200px;
@@ -39,35 +32,14 @@ a:hover{
   margin-top: 30px;
   background-color: white;
 }
-.mail{
-  border-right: $borderbutton;
-}
-.contact{
-  border-left: $borderbutton;
-}
 .blockContact{
   padding-bottom: 50px;
-}
-.color{
-  background-color: #2E7293;
-  height: 200px;
-}
-
-.picture{
-  height: 100px;
-  width: 120px;
 }
 .link a{
   color: white;
 }
 .link a:hover{
   text-decoration: none;
-}
-.logosocio{
-  height: 30px;
-}
-.forum{
-  height: 200px;
 }
 .blockContact{
   height: 300px;
@@ -110,7 +82,5 @@ a:hover{
     width: 100%;
     height: 40px;
   }
-
-
 
 }

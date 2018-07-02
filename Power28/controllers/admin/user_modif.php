@@ -14,7 +14,6 @@ if(isset($_POST['update']))
     updateuser($_POST['firstname'], $_POST['lastname'], $_POST['compagny'],  $_POST['is_admin'], $_POST['email'], $_POST['tel'], $_POST['adresse'], $_POST['city'], $_POST['password'], $_POST['id']);
     $message  = insertuser($_POST['firstname'], $_POST['lastname'], $_POST['compagny'], $_POST['is_admin'], $_POST['email'], $_POST['tel'], $_POST['adresse'], $_POST['city'], $_POST['password']);
 
-
 }
 
 if(isset($_GET['user_id']) && isset($_GET['action']) && $_GET['action'] == 'edit') {

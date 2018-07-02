@@ -10,9 +10,7 @@ if(isset($_GET['commentaire_id']) && isset($_GET['action']) && $_GET['action'] =
     header('location:index.php?admin=commentaire_list');
     exit;
 
-
 }
 
-
-require_once('views/admin/commentaireforum_list.php');
+require_once('views/admin/commentaire_list.php');
 ?>

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <?php require 'partials/head_assets.php'; ?>
 <?php require 'partials/header.php'; ?>
 <section class="col-8 m-auto">
@@ -72,3 +74,4 @@
 
     </form>
 </section>
+</html>

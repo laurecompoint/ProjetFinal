@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le :  mar. 26 juin 2018 à 08:57
+-- Généré le :  lun. 02 juil. 2018 à 17:38
 -- Version du serveur :  5.6.35
 -- Version de PHP :  7.1.8
 
@@ -61,84 +61,23 @@ CREATE TABLE `commentaire` (
 
 INSERT INTO `commentaire` (`id`, `forum_id`, `content`, `author`, `created_at`, `is_published`) VALUES
 (59, 5, 'Cras eu odio a diam ullamcorper lobortis non euismod enim.', 'Laure', '2018-06-15', 1),
-(60, 5, 'Cras eu odio a diam ullamcorper lobortis non euismod enim.', 'Laure', '2018-06-15', 1),
-(65, 5, 'EEE', 'Laure', '2018-06-18', 1),
-(66, 5, 'EEE', 'Laure', '2018-06-18', 1),
-(67, 5, 'EEE', 'Laure', '2018-06-18', 1),
-(68, 5, 'EEE', 'Laure', '2018-06-18', 1),
-(69, 5, 'Cras eu odio a diam ullamcorper lobortis non euismod enim.', 'Aude', '2018-06-18', 1),
-(70, 7, 'a', 'Laure', '2018-06-19', 1),
-(71, 7, 'Z', 'Laure', '2018-06-19', 1),
-(72, 7, 'Z', 'Laure', '2018-06-19', 1),
-(73, 7, 'Z', 'Laure', '2018-06-19', 1),
-(74, 7, 'A', 'Laure', '2018-06-19', 1),
-(75, 1, 'AAA', 'Laure', '2018-06-19', 1),
-(76, 1, 'AAA', 'Laure', '2018-06-19', 1),
-(77, 1, 'AAA', 'Laure', '2018-06-19', 1),
-(78, 1, 'A', 'Laure', '2018-06-19', 1),
-(79, 1, 'A', 'Laure', '2018-06-19', 1),
-(80, 1, 'A', 'Laure', '2018-06-19', 1),
-(81, 1, 'A', 'Laure', '2018-06-19', 1),
-(82, 7, 'SDDSS', 'Laure', '2018-06-19', 1),
-(83, 7, 'SDDSS', 'Laure', '2018-06-19', 1),
-(84, 7, 'SDDSS', 'Laure', '2018-06-19', 1),
-(85, 7, 'SDDSS', 'Laure', '2018-06-19', 1),
-(86, 7, 'SDDSS', 'Laure', '2018-06-19', 1),
-(87, 7, 'SDDSS', 'Laure', '2018-06-19', 1),
-(88, 7, 'SDDSS', 'Laure', '2018-06-19', 1),
-(89, 7, 'SDDSS', 'Laure', '2018-06-19', 1),
-(90, 5, 'aaa', 'Laure', '2018-06-19', 1),
-(91, 5, 'aa', 'Laure', '2018-06-19', 1),
-(92, 5, 'aa', 'Laure', '2018-06-19', 1),
-(93, 5, 'aa', '1', '2018-06-19', 1),
-(94, 5, 'aa', '1', '2018-06-19', 1),
-(95, 5, 'aa', '1', '2018-06-19', 1),
-(96, 5, 'ZZ', '0', '2018-06-19', 1),
-(97, 5, 'ZZ', '0', '2018-06-19', 1),
-(98, 7, 'aaaa', '0', '2018-06-19', 1),
-(99, 7, 'aa', '0', '2018-06-19', 1),
-(100, 7, 'aa', '0', '2018-06-19', 1),
-(101, 7, 'A', 'Laure', '2018-06-19', 1),
-(102, 7, 'A', 'Laure', '2018-06-19', 1),
-(103, 4, 'DDD', 'Z', '2018-06-19', 1),
-(104, 4, 'DDD', 'Z', '2018-06-19', 1),
-(105, 13, 'hhhh', 'laure', '2018-06-21', 1),
-(106, 13, 'hhhh', 'laure', '2018-06-21', 1),
-(107, 13, 'hhhh', 'laure', '2018-06-21', 1),
-(108, 13, 'hhhh', 'laure', '2018-06-21', 1),
-(109, 13, 'aa', 'laure', '2018-06-21', 1),
-(110, 13, 'aa', 'laure', '2018-06-21', 1),
-(111, 13, 'aa', 'laure', '2018-06-21', 1),
-(112, 7, 'd', 'laure', '2018-06-21', 1),
-(113, 3, 'test', 'laure', '2018-06-21', 1),
-(114, 3, 'test', 'laure', '2018-06-21', 1),
-(115, 3, 'test', 'laure', '2018-06-21', 1),
-(116, 3, 'a', 'laure', '2018-06-21', 1),
-(117, 3, 'a', 'laure', '2018-06-21', 1),
-(118, 3, 'a', 'laure', '2018-06-21', 1),
-(119, 3, 'a', 'laure', '2018-06-21', 1),
-(120, 3, 'z', 'laure', '2018-06-21', 1),
-(121, 15, 'efre', 'Sébastien', '2018-06-22', 1),
-(122, 15, 'efre', 'Sébastien', '2018-06-22', 1),
-(123, 15, 'efre', 'Sébastien', '2018-06-22', 1),
-(124, 15, 'j', 'Sébastien', '2018-06-22', 1),
-(125, 16, 'fyguhi', 'Sébastien', '2018-06-22', 1),
-(126, 16, 'fyguhi', 'Sébastien', '2018-06-22', 1),
-(127, 16, 'fyguhi', 'Sébastien', '2018-06-22', 1),
-(128, 16, 'fyguhi', 'Sébastien', '2018-06-22', 1),
-(129, 16, 'fyguhi', 'Sébastien', '2018-06-22', 1),
-(130, 16, 'fyguhi', 'Sébastien', '2018-06-22', 1),
-(131, 16, 'fyguhi', 'Sébastien', '2018-06-22', 1),
-(132, 16, 'fyguhi', 'Sébastien', '2018-06-22', 1),
-(133, 16, 'fyguhi', 'Sébastien', '2018-06-22', 1),
-(134, 16, 'tets', 'Sébastien', '2018-06-22', 1),
-(135, 16, 'tets', 'Sébastien', '2018-06-22', 1),
-(136, 16, 'gj', 'laure', '2018-06-24', 1),
-(137, 16, 'gj', 'laure', '2018-06-24', 1),
-(138, 16, 'gj', 'laure', '2018-06-24', 1),
-(139, 16, 'gj', 'laure', '2018-06-24', 1),
-(140, 16, 'gfg', 'laure', '2018-06-24', 1),
-(141, 16, 'ff', 'laure', '2018-06-24', 1);
+(60, 4, 'Cras eu odio a diam ullamcorper lobortis non euismod enim.', 'Laure', '2018-06-15', 1),
+(65, 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', 'Laure', '2018-06-18', 1),
+(66, 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit', 'Laure', '2018-06-18', 1),
+(67, 1, 'Ut enim ad minim veniam, quis nostrud exercitation', 'Laure', '2018-06-18', 1),
+(68, 5, 'Sed ut perspiciatis unde omnis iste natus error sit', 'Laure', '2018-06-18', 1),
+(70, 7, 'Ut enim ad minim veniam, quis nostrud exercitation', 'Laure', '2018-06-19', 1),
+(71, 7, 'Sed ut perspiciatis unde omnis iste natus error sit', 'Laure', '2018-06-19', 1),
+(75, 4, 'Ut enim ad minim veniam, quis nostrud exercitation', 'Laure', '2018-06-19', 1),
+(76, 1, 'Sed ut perspiciatis unde omnis iste natus error sit', 'Laure', '2018-06-19', 1),
+(77, 1, 'Ut enim ad minim veniam, quis nostrud exercitation', 'Laure', '2018-06-19', 1),
+(92, 4, 'Sed ut perspiciatis unde omnis iste natus error sit', 'Laure', '2018-06-19', 1),
+(143, 7, 'Voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia', 'Aude', '2018-06-28', 1),
+(144, 5, 'Voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia', 'Aude', '2018-06-28', 1),
+(145, 4, 'Voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia', 'Aude', '2018-06-28', 1),
+(146, 7, 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium ', 'Sébastien', '2018-06-28', 1),
+(147, 1, 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium ', 'Sébastien', '2018-06-28', 1),
+(148, 4, 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium ', 'Sébastien', '2018-06-28', 1);
 
 -- --------------------------------------------------------
 
@@ -150,7 +89,7 @@ CREATE TABLE `faq` (
   `id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `question` varchar(255) NOT NULL,
-  `reponse` varchar(255) NOT NULL,
+  `answer` varchar(255) NOT NULL,
   `is_published` tinyint(1) NOT NULL,
   `created_at` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -159,13 +98,13 @@ CREATE TABLE `faq` (
 -- Déchargement des données de la table `faq`
 --
 
-INSERT INTO `faq` (`id`, `category_id`, `question`, `reponse`, `is_published`, `created_at`) VALUES
+INSERT INTO `faq` (`id`, `category_id`, `question`, `answer`, `is_published`, `created_at`) VALUES
 (2, 1, 'Vestibulum laoreet enim vitae leo dapibus, sit amet facilisis quam tempor.?', 'Quisque mi mi, vulputate et ligula sed, pharetra dapibus justo. Proin nisi tellus, eleifend quis magna at, aliquet imperdiet arcu.', 1, '2018-06-05'),
 (3, 1, 'Coeperint apparari vel distributio ?', 'Cum autem commodis intervallata temporibus convivia longa.', 1, '0000-00-00'),
 (4, 3, 'Quisque gravida purus sit amet auctor pretium ?', 'Quisque mi mi, vulputate et ligula sed, pharetra dapibus justo. Proin nisi tellus, eleifend quis magna at, aliquet imperdiet arcu.', 1, '2018-06-12'),
 (5, 3, 'Nam aliquet et purus a tincidunt ?', 'Cras eu odio a diam ullamcorper lobortis non euismod enim.', 1, '2018-06-04'),
 (9, 4, 'Coeperint apparari vel distributio ?', 'Coeperint apparari vel distributio Coeperint apparari vel distributio', 1, '2018-06-04'),
-(10, 4, 'Coeperint apparari vel distributio ?', 'Coeperint apparari vel distributio ', 1, '2018-06-04');
+(10, 4, 'Nam aliquet et purus a tincidunt ?', 'Coeperint apparari vel distributio ', 1, '2018-06-04');
 
 -- --------------------------------------------------------
 
@@ -193,20 +132,9 @@ INSERT INTO `forum` (`id`, `category_id`, `name`, `author`, `content`, `is_publi
 (4, 1, 'Integer efficitur scelerisque libero pharetra imperdiet.', 'Laure', 'Vestibulum laoreet enim vitae leo dapibus, sit amet facilisis quam tempor. Nam aliquet et purus a tincidunt. Nullam interdum pharetra neque quis vehicula.', 1, '2018-06-10'),
 (5, 1, 'Quisque gravida purus sit amet auctor pretium.', 'Laure', 'Vestibulum laoreet enim vitae leo dapibus, sit amet facilisis quam tempor. Nam aliquet et purus a tincidunt. Nullam interdum pharetra neque quis vehicula.', 1, '2018-06-13'),
 (7, 1, ' Sujet : Integer efficitur scelerisque libero pharetra imperdiet.', 'Aude', ' Sujet : Integer efficitur scelerisque libero pharetra imperdie ??', 1, '2018-06-18'),
-(16, 1, 'Integer efficitur scelerisque libero phar...', 'Sébastien', 'test', 1, '2018-06-22'),
-(17, 1, 'Integer efficitur scelerisque libero phar...', 'Sébastien', 'ee', 1, '2018-06-22');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `product`
---
-
-CREATE TABLE `product` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `price` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+(16, 1, 'Integer efficitur scelerisque libero phar...', 'Sébastien', 'Vestibulum laoreet enim vitae leo dapibus, sit ame...', 1, '2018-06-22'),
+(17, 4, 'Integer efficitur scelerisque libero phar...', 'Sébastien', 'Vestibulum laoreet enim vitae leo dapibus, sit ame...', 1, '2018-06-22'),
+(18, 4, 'Vestibulum laoreet enim vitae leo dapibus, sit ame...', 'Aude', 'Vestibulum laoreet enim vitae leo dapibus, sit ame...', 1, '2018-06-28');
 
 -- --------------------------------------------------------
 
@@ -218,10 +146,11 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `firstname` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
+  `compagny` varchar(255) NOT NULL,
   `adresse` varchar(255) NOT NULL,
-  `ville` varchar(255) NOT NULL,
+  `city` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `numerotel` varchar(255) NOT NULL,
+  `tel` varchar(255) NOT NULL,
   `is_admin` tinyint(1) NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -230,15 +159,10 @@ CREATE TABLE `user` (
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id`, `firstname`, `lastname`, `adresse`, `ville`, `email`, `numerotel`, `is_admin`, `password`) VALUES
-(2, 'defrtg', 'rtyh', 'dfsgrht', 'dfsgh', 'aze@frgthy', 'fsgthuy', 0, '0cc175b9c0f1b6a831c399e269772661'),
-(3, 'Sébastien', 'C', 'Paris', 'Paris', 'fgthy@azfg', '4565787980', 0, 'e358efa489f58062f10dd7316b65649e'),
-(5, 'ezr', 'dfgre', 'fgtrh', 'frgth', 'sfdg@fg', 'sdfgth', 0, '0cc175b9c0f1b6a831c399e269772661'),
-(6, 'laure', 'Compoint', 'Paris', 'Paris', 'Admin@gmail.com', '123456', 1, '21232f297a57a5a743894a0e4a801fc3'),
-(7, 'FGTR', 'SDFGT', 'dfgt', 'dfrgth', 'DFG@dsfgd', 'dsfgtr', 0, '0cc175b9c0f1b6a831c399e269772661'),
-(8, 'zadezfr', 'dzer', 'fergth', 'frgthy', 'aze@dfg', 'efrgtry', 0, '0cc175b9c0f1b6a831c399e269772661'),
-(9, 'test', 'sdfgf', 'sgdthfjg', 'dfdgfhj', 'test@fff', 'sdgfgh', 0, '098f6bcd4621d373cade4e832627b4f6'),
-(10, 'qsdsf', 'sqdf', 'fdsg', 'dsqfgd', 'sd@zer', 'sqdfgdqfs', 0, 'd7a84628c025d30f7b2c52c958767e76');
+INSERT INTO `user` (`id`, `firstname`, `lastname`, `compagny`, `adresse`, `city`, `email`, `tel`, `is_admin`, `password`) VALUES
+(6, 'Laure', 'Compoint', 'Hp', '2 rue des pommes', 'Paris', 'Admin@gmail.com', '0134678109', 1, '21232f297a57a5a743894a0e4a801fc3'),
+(9, 'Aude', 'Compoint', 'Apple', '16 rue des cerises ', 'Vincennes', 'aude@gmail.com', '0678346461', 0, 'ae4e268a31b839566f62b259fb3fd9bc'),
+(10, 'Sébastien', 'Compoint', 'Naval Group', '4 rue des fraises', 'Lorient', 'sebastien@gmail.com', '0974813284', 0, '91ab7b369d48cd0eba34a1b6f417e31d');
 
 --
 -- Index pour les tables déchargées
@@ -269,12 +193,6 @@ ALTER TABLE `forum`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `product`
---
-ALTER TABLE `product`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Index pour la table `user`
 --
 ALTER TABLE `user`
@@ -293,7 +211,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=142;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=149;
 --
 -- AUTO_INCREMENT pour la table `faq`
 --
@@ -303,12 +221,7 @@ ALTER TABLE `faq`
 -- AUTO_INCREMENT pour la table `forum`
 --
 ALTER TABLE `forum`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
---
--- AUTO_INCREMENT pour la table `product`
---
-ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT pour la table `user`
 --

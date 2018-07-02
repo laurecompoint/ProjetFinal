@@ -1,5 +1,5 @@
-
-
+<!DOCTYPE html>
+<html>
 	<head>
 		<title>Administration des catégories - Power 28 !</title>
 		<?php require 'partials/head_assets.php'; ?>
@@ -11,9 +11,7 @@
 
             <?php require 'partials/nav.php'; ?>
 
-
 				<section class="col-12 float-right d-flex flex-column mt-5">
-
 
 					<div class="pb-4 d-flex justify-content-between">
 						<h4>Liste des catégories</h4>
@@ -64,4 +62,5 @@
 
 
 	</body>
+</html>
 

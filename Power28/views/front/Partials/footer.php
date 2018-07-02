@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="assets/css/footernav.css">
 <footer class="mt-1 footer">
 
-  <div class="row d-flex justify-content-around align-content-center container-fluid">
+  <div class="link row d-flex justify-content-around align-content-center container-fluid">
 
 
       <div class="col-md-6 text-white link mt-4">

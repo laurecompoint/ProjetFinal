@@ -39,7 +39,7 @@ function insertfaq($question, $answer,  $category_id, $is_published)
         require_once('index.php?page=forum&forum_id=1');
     }
     else{
-        $message = "Impossible d'enregistrer le nouveau commentaire...";
+        $message = "Impossible d'enregistrer le nouveau faq..";
     }
     return $message;
 }

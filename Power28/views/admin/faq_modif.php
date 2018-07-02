@@ -3,7 +3,7 @@
 <section class="col-8 m-auto">
     <div class="pb-3">
         <!-- Si $category existe, on affiche "Modifier" SINON on affiche "Ajouter" -->
-        <h4><?php if(isset($faq)): ?>Modifier<?php else: ?>Ajouter<?php endif; ?> une catégorie</h4>
+        <h4><?php if(isset($faq)): ?>Modifier<?php else: ?>Ajouter<?php endif; ?> une FAQ</h4>
     </div>
 
     <?php if(isset($message)): //si un message a été généré plus haut, l'afficher ?>
