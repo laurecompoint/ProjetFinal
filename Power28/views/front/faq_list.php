@@ -47,7 +47,7 @@
 
 <div class="questionmargine d-flex flex-column justify-content-center ml-3">
     <img src="assets/img/question.png" class="question rounded mx-auto d-block" alt="imagefaq"/>
-    <a href="index.php?page=forum_list&category_id=1"><h4 class="text-center mt-5">Si vous avez d'autres question ?</h4></a>
+    <a href="index.php?page=forum_list&category_id=1"><h4 class="text-center mt-5">Avez-vous d'autres questions ?</h4></a>
 
 </div>
 

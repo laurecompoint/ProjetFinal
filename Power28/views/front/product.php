@@ -15,8 +15,8 @@
 
         <h2 class="mt-5">Tarif de Power 28</h2>
 
-        <p class="mt-2">Logiciel vendu 1200€ H.T.
-            (Licence FileMaker Pro non incluse, voir : http://store.filemaker.com/)<br>
+        <p class="mt-2">Logiciel vendu 1200€ H.T. :
+            <br>
             - Licence unique par site, par entreprise.<br>
             - Nombre d'utilisateurs illimités.<br>
             - Formation de vos collaborateurs possible.<br>
@@ -130,13 +130,13 @@
 <div class="row container-fluid d-flex justify-content-between">
     <div class="d-flex flex-column col-md-6 text-justify mt-4">
 
-        <h2>Recommendation pour le logiciel</h2>
+        <h2>Recommandation pour le logiciel</h2>
 
         <p>Pour les étiquettes :</p>
         <p>Pour l'impression de vos étiquettes nous vous recommandons le modèle d'imprimante suivant :
-            LabelWriterTM 450 (http://www.dymo.com/fr-FR/labelwriter-450-label-printer)
+            LabelWriterTM 450 (<a href="http://www.dymo.com/fr-FR/labelwriter-450-label-printer">http://www.dymo.com/fr-FR/labelwriter-450-label-printer</a>)
             Ainsi que les étiquettes suivantes : <br>
-            Dymo 11352 [Return Address (https://www.dymo.eu/dymo-11352-return- address-labels-25x54mm.html)
+            Dymo 11352 [Return Address (<a href="https://www.dymo.eu/dymo-11352-etiketten-voor-retouradres.html">https://www.dymo.eu/dymo-11352-etiketten-voor-retouradres.html</a>)
         </p>
         <p>Pour les scans :</p>
         <p>Pour vos scans QR code en bluetooth (iDevices : iPhone, iPad | Mac ou PC) nous vous
@@ -146,13 +146,13 @@
         Opticon : L'OPI-3301i est un scanner portatif léger, confortable et sans fil doté
         d'une poignée pistolet. Il a un puissant imageur CMOS pour scanner à la fois 1D et 2D.
         La connexion Bluetooth assure un transfert de données en temps réel vers votre système.
-        <br>Lien : http://opticon.com/product/opi-3301i/</p>
+        <p>Lien : <a href="http://opticon.com/product/opi-3301i/">http://opticon.com/product/opi-3301i/</a></p>
 
         <p>Autre possibilités : </p>
 
-        <p>HoneyWell : https://country.honeywellaidc.com/fr-FR/Pages/Category.aspx?category=2d-barcode- scanner&cat=HSM
-            <br>Datalogic : https://www.datalogic.com/fra/produits/points-de-vente/lecteurs-manuels/rida-dbt6400-retail- pd-714.html
-        </p>
+        <p>HoneyWell : <a href="https://www.honeywell.com/">https://www.honeywell.com/</a></p>
+        Datalogic : <a href="https://www.datalogic.com/fra/produits/automatic-data-capture/lecteurs-manuels-pc-3.html">https://www.datalogic.com/fra/produits/automatic-data-capture/lecteurs-manuels-pc-3.html</a>
+
 
     </div>
     <div class="d-flex flex-column col-md-5 justify-content-end mb-5 mt-5">

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
+<head>
 <?php require ('Partials/nav.php');?>
-
 <link rel="stylesheet" href="assets/css/style.css">
+    <title>Power 28!</title>
+
+</head>
 <body>
 
     <div class="title d-flex flex-column text-center mt-5">
@@ -35,7 +38,7 @@
 
             </p>
             <p class="text-justify">
-                Les fonctionnalités de Power28 ont ensuite été étendues à tous types d'entreprises souhaitant connaître
+                Les fonctionnalités de Power 28 ont ensuite été étendues à tous types d'entreprises souhaitant connaître
                 la valeur et le contenu de son stock et réaliser des entrées et sorties à l'aide de scan par QR-Code.
             </p>
             <div class="borderbuttonOne borderbutton text-center">

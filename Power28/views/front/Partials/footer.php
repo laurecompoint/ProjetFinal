@@ -7,7 +7,7 @@
 
       <div class="col-md-6 text-white link mt-4">
           <p>Power 28 / <a href="index.php?admin"> Administration</p></a>
-          <p>Tous droits reserver copyright 2018 </p>
+          <p>Tous droits réservés copyright 2018 </p>
       </div>
       <div class="col-md-6 text-white mt-4 link text-right">
 

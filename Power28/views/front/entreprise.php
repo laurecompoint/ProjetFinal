@@ -12,7 +12,7 @@
 
     <div class="bg-white presentation d-flex justify-content-center align-items-center flex-column text-justify text-center">
         <h3 class="text-right text">Présentation de notre entreprise</h3>
-        <p class="ml-2">Notre emtreprise se base principalement à Toulouse mais aussi à Paris pour nos clients
+        <p class="ml-2">Notre entreprise se base principalement à Toulouse mais aussi à Paris pour nos clients
             les plus fidèles.
         </p>
         <p class="ml-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod

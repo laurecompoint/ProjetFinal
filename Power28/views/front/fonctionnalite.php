@@ -20,31 +20,31 @@
             <div class="row col-md-6 d-flex justify-content-between">
 
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/fonctionnaliteone.png" alt="logofonction" class="picture" />
-                   <a href="#accueil"><h6 class="mr-5 text-center text-white">Accueil</h6></a>
+                    <img src="assets/img/fonctionnaliteone.png" alt="logofonction" class="m-auto picture" />
+                   <a href="#accueil"><h6 class="m-auto  text-center text-white">Accueil</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/user.png" alt="logofonction" class="picture" />
-                    <a href="#utilisateurs"><h6 class="mr-5 text-white">Utilisateurs</h6></a>
+                    <img src="assets/img/user.png" alt="logofonction" class="picture m-auto " />
+                    <a href="#utilisateurs"><h6 class="m-auto text-white">Utilisateurs</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/fonctionnalitesix.png" alt="logofonction" class="picture" />
-                    <a href="#transaction"><h6 class="mr-4 text-white">Transaction</h6></a>
+                    <img src="assets/img/fonctionnalitesix.png" alt="logofonction" class="picture m-auto " />
+                    <a href="#transaction"><h6 class="m-auto text-white">Transaction</h6></a>
                 </div>
             </div>
 
             <div class="row col-md-6 d-flex justify-content-around">
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/fonctionnalitethree.png" alt="logofonction" class="picture" />
-                    <a href="#parametres"><h6 class="mr-4 text-white">Paramètre</h6></a>
+                    <img src="assets/img/fonctionnalitethree.png" alt="logofonction" class="m-auto picture" />
+                    <a href="#parametres"><h6 class="m-auto text-white">Paramètre</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/fonctionnalitefoors.png" alt="logofonction" class="picture" />
-                    <a href="#historique"><h6 class="mr-4 text-white">Historique</h6></a>
+                    <img src="assets/img/fonctionnalitefoors.png" alt="logofonction" class="picture picturemargine" />
+                    <a href="#historique"><h6 class="m-auto text-white historymargine">Historique</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/fonctionnalitefive.png" alt="logofonction" class="picture" />
-                    <a href="#categories"><h6 class="mr-4 text-white">Catégories</h6></a>
+                    <img src="assets/img/fonctionnalitefive.png" alt="logofonction" class="picture m-auto " />
+                    <a href="#categories"><h6 class="m-auto text-white">Catégories</h6></a>
                 </div>
             </div>
         </div>
@@ -54,31 +54,31 @@
 
             <div class="row col-md-6 d-flex justify-content-around">
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/liste.png" alt="logofonction" class="picture" />
-                    <a href="#stock"><h6 class="mr-5 text-white">Inventaire</h6></a>
+                    <img src="assets/img/liste.png" alt="logofonction" class="picture m-auto " />
+                    <a href="#stock"><h6 class="m-auto  text-white">Inventaire</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/fonctionnaliteten.png" alt="logofonction" class="picture" />
-                    <a href="#lieux"><h6 class="mr-4 text-white">Lieux</h6></a>
+                    <img src="assets/img/fonctionnaliteten.png" alt="logofonction" class="m-auto picture" />
+                    <a href="#lieux"><h6 class="m-auto  text-white">Lieux</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/fourniseur.png" alt="logofonction" class="picture" />
-                    <a href="#fourniseurs"><h6 class="mr-4 text-white">Fournisseurs</h6></a>
+                    <img src="assets/img/catalogue.png" alt="logofonction" class="m-auto picture" />
+                    <a href="#catalogue"><h6 class="m-auto  text-white">Catalogue</h6></a>
                 </div>
             </div>
 
             <div class="row col-md-6 d-flex justify-content-around">
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/fonctionnaliteeight.png" alt="logofonction" class="picture" />
-                    <a href="#catalogue"><h6 class="mr-4 text-white mt-1">Catalogue</h6></a>
+                    <img src="assets/img/fourniseur.png" alt="logofonction" class="m-auto picture" />
+                    <a href="#fourniseurs"><h6 class="m-auto  text-white">Fournisseurs</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/fonctionnalitetwo.png" alt="logofonction" class="picture" />
-                    <a href="#fabricants"><h6 class="mr-4 text-white">Fabricants</h6></a>
+                    <img src="assets/img/fonctionnalitetwo.png" alt="logofonction" class="m-auto  picture" />
+                    <a href="#fabricants"><h6 class="m-auto  text-white">Fabricants</h6></a>
                 </div>
                 <div class="link d-flex flex-column text-center col-4 mt-5">
-                    <img src="assets/img/fonctionnalitetwelve.png" alt="logofonction" class="picture" />
-                    <a href="#commandes"><h6 class="mr-4 text-center text-white">Commandes</h6></a>
+                    <img src="assets/img/fonctionnalitetwelve.png" alt="logofonction" class="m-auto  picture" />
+                    <a href="#commandes"><h6 class="m-auto  text-center text-white">Commandes</h6></a>
                 </div>
 
             </div>
@@ -128,7 +128,7 @@
         </div>
     <h5 class="buttoncollapsed mt-4">
         <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <button type="button" class="btn btn-info ml-5">Plus de details</button>
+            <button type="button" class="btn btn-info ml-5">Plus de détails </button>
         </a>
     </h5>
 
@@ -265,9 +265,9 @@
                 </div>
             </div>
 
-    <h3 class="page mt-5 title container text-left">Débit de stock</h3>
+    <h3 id="stock" class="page mt-5 title container text-left">Débit de stock</h3>
 
-    <div id="stock" class="row d-flex justify-content-center">
+    <div  class="row d-flex justify-content-center">
 
         <div class="d-flex flex-column col-md-6">
             <img src="assets/img/imgfonction/debit.png" alt="fonction1" class="functionOne">
@@ -283,7 +283,7 @@
         </div>
     </div>
 
-    <h3 id="transaction" class="mt-3 title container">Inventaire de stock</h3>
+    <h3 id="" class="mt-3 title container">Inventaire de stock</h3>
     <div class="row d-flex justify-content-center">
 
         <div  class="d-flex flex-column col-md-6">
@@ -397,7 +397,7 @@
     </div>
     <h5 class="buttoncollapsed mt-4">
         <a class="collapsed" data-toggle="collapse" href="#collapseFoor" aria-expanded="false" aria-controls="collapseTwo">
-            <button type="button" class="btn btn-info ml-5">Plus de details</button>
+            <button type="button" class="btn btn-info ml-5">Plus de détails </button>
         </a>
     </h5>
     <div id="accordion" role="tablist">

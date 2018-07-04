@@ -9,7 +9,7 @@
 <?php require ('Partials/nav.php');?>
 <div class="contact d-flex justify-content-center">
 
-    <h4 class="d-flex align-items-center text-white">Contactez nous</h4>
+    <h4 class="d-flex align-items-center text-white">Contactez-nous</h4>
 
 </div>
 
