@@ -3,10 +3,9 @@
 <head>
     <link rel="stylesheet" href="assets/css/forums.css">
     <title>Power 28 : FAQ</title>
+    <?php require ('Partials/nav.php');?>
 </head>
 <body class="body">
-
-<?php require ('Partials/nav.php');?>
 
 <h2 class="text-center mt-4">Les réponses à vos questions</h2>
 

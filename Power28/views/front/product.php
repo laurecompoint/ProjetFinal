@@ -2,9 +2,10 @@
 <html>
 <head>
     <link rel="stylesheet" href="assets/css/product.css">
+    <?php require ('Partials/nav.php');?>
 </head>
 <body class="body">
-<?php require ('Partials/nav.php');?>
+
 <div class="row container-fluid d-flex justify-content-between">
     <div class="d-flex flex-column col-md-5 mt-5">
         <h2>Power 28</h2>
@@ -21,6 +22,7 @@
             - Nombre d'utilisateurs illimités.<br>
             - Formation de vos collaborateurs possible.<br>
             - Hébergement de votre base de donnée non inclus, voir la section Hébergement & FileMaker Server.
+            (Prix : 588 donc 49€ par mois)
         </p>
 
         <h2>Option d'achat</h2>
@@ -31,8 +33,9 @@
 
                     <div class="custom-control custom-checkbox d-flex justify-content-between">
                         <input type="checkbox" id="myCheck" name="myCheck" class="mt-1" onclick="myCheck">
-                        <label>Hebergements</label>
-                        <p class="ml-3">49€</p>
+                        <label> Hebergements</label>
+                        <p class="ml-3">588€ </p>
+
                     </div>
 
                 </div>
@@ -196,7 +199,7 @@
         var somme = 1200;
         $('#total').empty();
         if (checkBox.checked == true){
-            somme = somme + 49;
+            somme = somme + 588;
         }
         $('#total').append("<p>" + somme + "€" + "</p>");
         $('#totalInput').val(somme);

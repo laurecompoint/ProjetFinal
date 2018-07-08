@@ -3,16 +3,14 @@
 <head>
     <link rel="stylesheet" href="assets/css/contacts.css">
     <title>Power 28 : Contact </title>
+    <?php require ('Partials/nav.php');?>
 </head>
 
-
-<?php require ('Partials/nav.php');?>
 <div class="contact d-flex justify-content-center">
 
     <h4 class="d-flex align-items-center text-white">Contactez-nous</h4>
 
 </div>
-
 
 <div class="col-6 mt-5 container">
     <form action="index.php?page=contact" method="post" class="mt-5">

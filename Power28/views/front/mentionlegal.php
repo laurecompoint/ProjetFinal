@@ -4,12 +4,9 @@
 
     <link rel="stylesheet" href="assets/css/user.css">
     <title>Power 28 : Mention Légal</title>
+    <?php require ('Partials/nav.php');?>
 
 </head>
-<?php require ('Partials/nav.php');?>
-
-
-
 <div class="contact d-flex justify-content-center">
 
     <h4 class="text-white d-flex align-items-center">Mention Légal</h4>

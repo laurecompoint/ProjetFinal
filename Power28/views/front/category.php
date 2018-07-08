@@ -1,6 +1,4 @@
-
 <nav class="col-12 py-2 categories-nav">
-
 
   <ul class="mt-4 row subject d-flex justify-content-center">
 

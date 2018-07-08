@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php require ('Partials/nav.php');?>
-<link rel="stylesheet" href="assets/css/style.css">
-    <title>Power 28!</title>
 
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Power 28!</title>
+    <?php require ('Partials/nav.php');?>
 </head>
 <body>
 

@@ -1,12 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/css/fonctionnalite.css">
+    <title>Power 28 : Fonctionnaliés</title>
+    <?php require ('Partials/nav.php');?>
+</head>
 
-      <head>
-          <link rel="stylesheet" href="assets/css/fonctionnalite.css">
-          <title>Power 28 : Fonctionnaliés</title>
-      </head>
-
-      <body class="body">
-
-      <?php require ('Partials/nav.php');?>
+<body class="body">
 
     <div class="fonction d-flex flex-column">
 
@@ -632,4 +632,5 @@
       <?php require 'Partials/footer.php';?>
 
 </body>
+</html>
 

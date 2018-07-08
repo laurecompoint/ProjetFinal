@@ -5,12 +5,10 @@
     <link rel="stylesheet" href="assets/css/user.css">
 
     <title>Power 28 : User profil</title>
+    <?php require 'Partials/nav.php'; ?>
 
 </head>
 <body class="body">
-
-<?php require 'Partials/nav.php'; ?>
-
 
 <div class="container-fluid">
 

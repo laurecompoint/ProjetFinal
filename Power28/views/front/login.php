@@ -3,11 +3,9 @@
 <head>
     <link rel="stylesheet" href="assets/css/user.css">
     <title>Power 28 : Connection/Inscription</title>
+    <?php require ('Partials/nav.php');?>
 </head>
 <body class="body">
-
-<?php require ('Partials/nav.php');?>
-
 
     <div class="row my-3 d-flex justify-content-center mt-5">
 

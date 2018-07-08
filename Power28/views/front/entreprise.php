@@ -3,10 +3,10 @@
 <head>
     <link rel="stylesheet" href="assets/css/entreprise.css">
     <title>Power 28 : Entreprise</title>
-
+    <?php require ('Partials/nav.php');?>
 </head>
 <body class="body">
-<?php require ('Partials/nav.php');?>
+
 <div class="compagny d-flex justify-content-start align-items-center container-fluid">
 
 

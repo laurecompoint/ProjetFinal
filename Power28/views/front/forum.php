@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="assets/css/forums.css">
-    <title>Power 28 : Forum </title>
+
 </head>
 <body class="body">
 <div class="navheader">

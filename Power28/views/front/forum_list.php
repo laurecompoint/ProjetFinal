@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="assets/css/forums.css">
-
-  <title>Power 28 : Forum </title>
-
+    <link rel="stylesheet" href="assets/css/forums.css">
+    <title>Power 28 : Forum </title>
+    <?php require ('Partials/nav.php');?>
 </head>
 <body class="body">
-<?php require ('Partials/nav.php');?>
 
 <div class="subjectforum d-flex flex-column justify-content-center">
     <?php require 'category.php'; ?>

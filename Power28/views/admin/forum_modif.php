@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
 <?php require 'partials/head_assets.php'; ?>
 <?php require 'partials/header.php'; ?>
+</head>
 <section class="col-8 m-auto">
     <div class="pb-3">
         <!-- Si $category existe, on affiche "Modifier" SINON on affiche "Ajouter" -->
