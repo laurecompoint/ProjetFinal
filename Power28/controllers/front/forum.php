@@ -10,7 +10,7 @@ if(isset($_GET['forum_id'])){
     $forum = getForum( $_GET['forum_id'] );
 
     if(!$forum['id']){
-        header('location:index.php');
+        header('location:index.php?page=error');
         exit;
     }
 
@@ -31,11 +31,9 @@ if(isset($_GET['forum_id'])){
 
         else
         {
-
             commentaire($_POST['author'], $_POST['content'], $_POST['forum_id'],  $_POST['is_published'], $_POST['created_at']);
             header('location:index.php?page=forum_list&category_id=1');
             exit;
-
         }
     }
 
